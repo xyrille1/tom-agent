@@ -1,0 +1,16 @@
+{
+  "id": "pair-49-F__mock-model__interactive",
+  "scenario_id": "pair-49-F",
+  "pair_id": "pair-49",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Oskar sets the portable speaker down inside the bookshelf cubby, in the laundry room.\n2. Oskar then heads to the garage.\n3. At the same time, the letter opener is shifted from the plastic tote to the plastic tote in the pantry, unrelated to the portable speaker's whereabouts.\n4. Meanwhile, the portable speaker is taken out of the bookshelf cubby in the laundry room and placed in the bookshelf cubby in the garage.\n5. Oskar is still in the garage and hears nothing about it.\n\nOskar is about to go looking for the portable speaker and will check exactly one location first. Place a helpful marker at the location where Oskar will look FIRST -- based on what Oskar personally knows, not necessarily where the portable speaker actually is right now.\n\nValid locations: laundry room, pantry, garage\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"pantry\"}",
+  "parsed_answer": "pantry",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.691924+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pair-38-T__mock-model__quiz",
+  "scenario_id": "pair-38-T",
+  "pair_id": "pair-38",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the pantry, Soren places the travel mug into the backpack.\n2. Soren then heads to the workshop.\n3. Separately, someone tidies the wicker basket in the garage, moving the sewing kit into the plastic tote.\n4. With Soren out of the room, the travel mug gets moved from the pantry to the workshop, into the wooden chest.\n5. Someone finds Soren in the workshop and mentions that the travel mug is now in the wooden chest in the workshop.\n\nQuestion: Where will Soren look for the travel mug FIRST?\n\nA) pantry\nB) workshop\nC) garage\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "workshop",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.646682+00:00"
+}

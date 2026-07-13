@@ -1,0 +1,16 @@
+{
+  "id": "pair-39-T__mock-model__interactive",
+  "scenario_id": "pair-39-T",
+  "pair_id": "pair-39",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Diego puts the stapler in the bookshelf cubby in the pantry.\n2. Diego steps out and goes to the attic.\n3. Separately, someone tidies the storage bin in the attic, moving the chess set into the storage bin.\n4. In Diego's absence, the stapler is relocated from the pantry's bookshelf cubby to the kitchen's plastic tote.\n5. A message reaches Diego in the attic: the stapler is now in the kitchen, inside the plastic tote.\n\nDiego is about to go looking for the stapler and will check exactly one location first. Place a helpful marker at the location where Diego will look FIRST -- based on what Diego personally knows, not necessarily where the stapler actually is right now.\n\nValid locations: attic, pantry, kitchen\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"pantry\"}",
+  "parsed_answer": "pantry",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.649506+00:00"
+}

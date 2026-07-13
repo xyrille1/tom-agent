@@ -1,0 +1,16 @@
+{
+  "id": "pair-22-T__mock-model__quiz",
+  "scenario_id": "pair-22-T",
+  "pair_id": "pair-22",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Aisha sets the deck of cards down inside the wooden chest, in the sunroom.\n2. Aisha then heads to the kitchen.\n3. While Aisha is away, someone moves the deck of cards from the wooden chest in the sunroom to the top drawer in the home office.\n4. A message reaches Aisha in the kitchen: the deck of cards is now in the home office, inside the top drawer.\n\nQuestion: Where will Aisha look for the deck of cards FIRST?\n\nA) home office\nB) sunroom\nC) kitchen\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "sunroom",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.578943+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pair-29-T__mock-model__interactive",
+  "scenario_id": "pair-29-T",
+  "pair_id": "pair-29",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Soren sets the first aid kit down inside the shoe rack, in the laundry room.\n2. Soren steps out and goes to the sunroom.\n3. In Soren's absence, the first aid kit is relocated from the laundry room's shoe rack to the workshop's cardboard box.\n4. Before returning, Soren learns that the first aid kit was moved to the cardboard box in the workshop.\n\nSoren is about to go looking for the first aid kit and will check exactly one location first. Place a helpful marker at the location where Soren will look FIRST -- based on what Soren personally knows, not necessarily where the first aid kit actually is right now.\n\nValid locations: laundry room, sunroom, workshop\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"workshop\"}",
+  "parsed_answer": "workshop",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.605514+00:00"
+}

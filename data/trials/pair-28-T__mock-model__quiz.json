@@ -1,0 +1,16 @@
+{
+  "id": "pair-28-T__mock-model__quiz",
+  "scenario_id": "pair-28-T",
+  "pair_id": "pair-28",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Rafael tucks the spare charger away in the bookshelf cubby in the mudroom.\n2. A moment later, Rafael leaves for the basement.\n3. Separately, someone tidies the toolbox in the basement, moving the puzzle box into the storage bin.\n4. In Rafael's absence, the spare charger is relocated from the mudroom's bookshelf cubby to the bedroom's plastic tote.\n5. Rafael is told, while still in the basement, that the spare charger has been moved to the plastic tote in the bedroom.\n\nQuestion: Where will Rafael look for the spare charger FIRST?\n\nA) mudroom\nB) bedroom\nC) basement\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "mudroom",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.603510+00:00"
+}

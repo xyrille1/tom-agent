@@ -1,0 +1,16 @@
+{
+  "id": "pair-24-T__mock-model__quiz",
+  "scenario_id": "pair-24-T",
+  "pair_id": "pair-24",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Zara sets the letter opener down inside the plastic tote, in the workshop.\n2. A moment later, Zara leaves for the home office.\n3. Meanwhile, the letter opener is taken out of the plastic tote in the workshop and placed in the plastic tote in the bedroom.\n4. A message reaches Zara in the home office: the letter opener is now in the bedroom, inside the plastic tote.\n\nQuestion: Where will Zara look for the letter opener FIRST?\n\nA) home office\nB) bedroom\nC) workshop\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "home office",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.587980+00:00"
+}

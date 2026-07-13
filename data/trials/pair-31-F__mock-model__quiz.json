@@ -1,0 +1,16 @@
+{
+  "id": "pair-31-F__mock-model__quiz",
+  "scenario_id": "pair-31-F",
+  "pair_id": "pair-31",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Wren puts the letter opener in the plastic tote in the hallway closet.\n2. Wren then heads to the pantry.\n3. At the same time, the packet of seeds is shifted from the shoe rack to the shoe rack in the pantry, unrelated to the letter opener's whereabouts.\n4. Meanwhile, the letter opener is taken out of the plastic tote in the hallway closet and placed in the wicker basket in the garage.\n5. Nobody tells Wren, who stays in the pantry the whole time.\n\nQuestion: Where will Wren look for the letter opener FIRST?\n\nA) garage\nB) hallway closet\nC) pantry\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "garage",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.615556+00:00"
+}

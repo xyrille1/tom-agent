@@ -1,0 +1,16 @@
+{
+  "id": "pair-40-T__mock-model__quiz",
+  "scenario_id": "pair-40-T",
+  "pair_id": "pair-40",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Aisha sets the rain jacket down inside the shoe rack, in the home office.\n2. Aisha then heads to the sunroom.\n3. In Aisha's absence, the rain jacket is relocated from the home office's shoe rack to the sunroom's plastic tote.\n4. A message reaches Aisha in the sunroom: the rain jacket is now in the sunroom, inside the plastic tote.\n\nQuestion: Where will Aisha look for the rain jacket FIRST?\n\nA) home office\nB) kitchen\nC) sunroom\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "sunroom",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.659241+00:00"
+}

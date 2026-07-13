@@ -1,0 +1,16 @@
+{
+  "id": "pair-32-T__mock-model__quiz",
+  "scenario_id": "pair-32-T",
+  "pair_id": "pair-32",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Talia sets the bicycle pump down inside the backpack, in the home office.\n2. Talia steps out and goes to the attic.\n3. While Talia is away, someone moves the bicycle pump from the backpack in the home office to the filing cabinet in the bedroom.\n4. Someone finds Talia in the attic and mentions that the bicycle pump is now in the filing cabinet in the bedroom.\n\nQuestion: Where will Talia look for the bicycle pump FIRST?\n\nA) home office\nB) bedroom\nC) attic\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "bedroom",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.623445+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pair-42-F__mock-model__quiz",
+  "scenario_id": "pair-42-F",
+  "pair_id": "pair-42",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the kitchen, Priya places the camera into the wicker basket.\n2. Priya then heads to the home office.\n3. At the same time, the rain jacket is shifted from the linen cupboard to the linen cupboard in the home office, unrelated to the camera's whereabouts.\n4. Meanwhile, the camera is taken out of the wicker basket in the kitchen and placed in the shoe rack in the attic.\n5. Priya is still in the home office and hears nothing about it.\n\nQuestion: Where will Priya look for the camera FIRST?\n\nA) home office\nB) attic\nC) kitchen\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "attic",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.664245+00:00"
+}

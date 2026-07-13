@@ -1,0 +1,16 @@
+{
+  "id": "pair-46-T__mock-model__quiz",
+  "scenario_id": "pair-46-T",
+  "pair_id": "pair-46",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Priya tucks the sketchbook away in the top drawer in the sunroom.\n2. A moment later, Priya leaves for the kitchen.\n3. With Priya out of the room, the sketchbook gets moved from the sunroom to the kitchen, into the linen cupboard.\n4. Before returning, Priya learns that the sketchbook was moved to the linen cupboard in the kitchen.\n\nQuestion: Where will Priya look for the sketchbook FIRST?\n\nA) kitchen\nB) sunroom\nC) pantry\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "pantry",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.684241+00:00"
+}

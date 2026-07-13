@@ -1,0 +1,16 @@
+{
+  "id": "pair-30-T__mock-model__interactive",
+  "scenario_id": "pair-30-T",
+  "pair_id": "pair-30",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. While standing in the home office, Diego places the bicycle pump into the shoe rack.\n2. Diego steps out and goes to the mudroom.\n3. At the same time, the puzzle box is shifted from the toolbox to the cardboard box in the sunroom, unrelated to the bicycle pump's whereabouts.\n4. Meanwhile, the bicycle pump is taken out of the shoe rack in the home office and placed in the wicker basket in the kitchen.\n5. A message reaches Diego in the mudroom: the bicycle pump is now in the kitchen, inside the wicker basket.\n\nDiego is about to go looking for the bicycle pump and will check exactly one location first. Place a helpful marker at the location where Diego will look FIRST -- based on what Diego personally knows, not necessarily where the bicycle pump actually is right now.\n\nValid locations: sunroom, kitchen, mudroom, home office\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"kitchen\"}",
+  "parsed_answer": "kitchen",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.613556+00:00"
+}

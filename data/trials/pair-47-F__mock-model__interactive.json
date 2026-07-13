@@ -1,0 +1,16 @@
+{
+  "id": "pair-47-F__mock-model__interactive",
+  "scenario_id": "pair-47-F",
+  "pair_id": "pair-47",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Yuki sets the hand mirror down inside the bookshelf cubby, in the hallway closet.\n2. Yuki then heads to the garage.\n3. Meanwhile, the hand mirror is taken out of the bookshelf cubby in the hallway closet and placed in the shoe rack in the garage.\n4. Yuki is still in the garage and hears nothing about it.\n\nYuki is about to go looking for the hand mirror and will check exactly one location first. Place a helpful marker at the location where Yuki will look FIRST -- based on what Yuki personally knows, not necessarily where the hand mirror actually is right now.\n\nValid locations: garage, pantry, basement, hallway closet\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"hallway closet\"}",
+  "parsed_answer": "hallway closet",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.685240+00:00"
+}

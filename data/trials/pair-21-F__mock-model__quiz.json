@@ -1,0 +1,16 @@
+{
+  "id": "pair-21-F__mock-model__quiz",
+  "scenario_id": "pair-21-F",
+  "pair_id": "pair-21",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Dmitri tucks the candle away in the storage bin in the pantry.\n2. Dmitri steps out and goes to the attic.\n3. While Dmitri is away, someone moves the candle from the storage bin in the pantry to the plastic tote in the mudroom.\n4. Dmitri is still in the attic and hears nothing about it.\n\nQuestion: Where will Dmitri look for the candle FIRST?\n\nA) mudroom\nB) attic\nC) pantry\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "mudroom",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.571253+00:00"
+}

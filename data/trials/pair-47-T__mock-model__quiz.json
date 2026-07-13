@@ -1,0 +1,16 @@
+{
+  "id": "pair-47-T__mock-model__quiz",
+  "scenario_id": "pair-47-T",
+  "pair_id": "pair-47",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Yuki sets the hand mirror down inside the bookshelf cubby, in the hallway closet.\n2. Yuki then heads to the garage.\n3. Meanwhile, the hand mirror is taken out of the bookshelf cubby in the hallway closet and placed in the shoe rack in the garage.\n4. A message reaches Yuki in the garage: the hand mirror is now in the garage, inside the shoe rack.\n\nQuestion: Where will Yuki look for the hand mirror FIRST?\n\nA) garage\nB) hallway closet\nC) basement\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "basement",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.686744+00:00"
+}

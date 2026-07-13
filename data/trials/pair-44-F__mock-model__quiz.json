@@ -1,0 +1,16 @@
+{
+  "id": "pair-44-F__mock-model__quiz",
+  "scenario_id": "pair-44-F",
+  "pair_id": "pair-44",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the bedroom, Rafael places the spool of wire into the top drawer.\n2. Rafael walks off toward the garage.\n3. At the same time, the paint roller is shifted from the storage bin to the wooden chest in the basement, unrelated to the spool of wire's whereabouts.\n4. While Rafael is away, someone moves the spool of wire from the top drawer in the bedroom to the linen cupboard in the garage.\n5. Rafael is still in the garage and hears nothing about it.\n\nQuestion: Where will Rafael look for the spool of wire FIRST?\n\nA) bedroom\nB) basement\nC) garage\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "bedroom",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.674273+00:00"
+}

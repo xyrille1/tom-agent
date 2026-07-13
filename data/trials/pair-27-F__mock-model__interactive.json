@@ -1,0 +1,16 @@
+{
+  "id": "pair-27-F__mock-model__interactive",
+  "scenario_id": "pair-27-F",
+  "pair_id": "pair-27",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Dmitri puts the harmonica in the top drawer in the mudroom.\n2. Dmitri steps out and goes to the workshop.\n3. Meanwhile, the harmonica is taken out of the top drawer in the mudroom and placed in the filing cabinet in the workshop.\n4. Nobody tells Dmitri, who stays in the workshop the whole time.\n\nDmitri is about to go looking for the harmonica and will check exactly one location first. Place a helpful marker at the location where Dmitri will look FIRST -- based on what Dmitri personally knows, not necessarily where the harmonica actually is right now.\n\nValid locations: mudroom, attic, workshop, home office\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"home office\"}",
+  "parsed_answer": "home office",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.596716+00:00"
+}

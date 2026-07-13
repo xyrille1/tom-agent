@@ -1,0 +1,16 @@
+{
+  "id": "pair-26-F__mock-model__quiz",
+  "scenario_id": "pair-26-F",
+  "pair_id": "pair-26",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Amara tucks the packet of seeds away in the shoe rack in the pantry.\n2. A moment later, Amara leaves for the workshop.\n3. With Amara out of the room, the packet of seeds gets moved from the pantry to the workshop, into the shoe rack.\n4. Amara remains in the workshop, unaware anything has changed.\n\nQuestion: Where will Amara look for the packet of seeds FIRST?\n\nA) home office\nB) workshop\nC) pantry\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "home office",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.594716+00:00"
+}
