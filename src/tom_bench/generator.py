@@ -114,7 +114,7 @@ def generate_pair(seed: int, tier: int = 1) -> tuple[Scenario, Scenario]:
             c3 = c4 = d_containers[0]
         obj2 = rng.choice([o for o in OBJECTS if o != target_obj])
         d_text = rng.choice(DISTRACTOR_TEMPLATES).format(
-            container3=c3, distractor_room=d_room, obj2=obj2, container4=c4
+            container3=c3, distractor_room=d_room, obj2=obj2, container4=c4, obj=target_obj
         )
         events.append(
             Event(

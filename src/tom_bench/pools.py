@@ -154,5 +154,5 @@ FILLER_TEMPLATES: list[str] = [
 
 DISTRACTOR_TEMPLATES: list[str] = [
     "Separately, someone tidies the {container3} in the {distractor_room}, moving the {obj2} into the {container4}.",
-    "At the same time, the {obj2} is shifted from the {container3} to the {container4} in the {distractor_room}, unrelated to the {obj}.",
+    "At the same time, the {obj2} is shifted from the {container3} to the {container4} in the {distractor_room}, unrelated to the {obj}'s whereabouts.",
 ]
