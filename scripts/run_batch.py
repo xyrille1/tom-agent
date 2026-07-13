@@ -60,6 +60,13 @@ def main() -> None:
                 "free-tier key, or pass --mock to exercise the pipeline at zero cost."
             )
 
+    def on_trial(trial):
+        if args.dry_run:
+            return
+        status = "OK   " if trial.raw_response is not None else "ERROR"
+        detail = trial.error if trial.error else f"correct={trial.is_correct} tag={trial.failure_tag}"
+        print(f"[{status}] {trial.model_name} | {trial.condition} | {trial.task_type} :: {detail}")
+
     plan = run_batch(
         pairs,
         clients,
@@ -67,6 +74,7 @@ def main() -> None:
         trials_dir=args.trials_dir,
         max_retries=args.max_retries,
         dry_run=args.dry_run,
+        on_trial=on_trial,
     )
 
     print(f"Scenario pairs: {len(pairs)}")

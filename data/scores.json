@@ -1,6 +1,114 @@
 {
-  "generated_at": "2026-07-13T17:51:11.284523+00:00",
+  "generated_at": "2026-07-13T18:52:07.437802+00:00",
   "rows": [
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "interactive",
+      "condition": "F",
+      "accuracy": 0.8,
+      "ci_low": 0.37552826411853885,
+      "ci_high": 0.9637768390302125,
+      "n": 5
+    },
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "interactive",
+      "condition": "T",
+      "accuracy": 0.2,
+      "ci_low": 0.036223160969787456,
+      "ci_high": 0.6244717358814612,
+      "n": 5
+    },
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "quiz",
+      "condition": "F",
+      "accuracy": 0.8,
+      "ci_low": 0.37552826411853885,
+      "ci_high": 0.9637768390302125,
+      "n": 5
+    },
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "quiz",
+      "condition": "T",
+      "accuracy": 0.6,
+      "ci_low": 0.23071993220883702,
+      "ci_high": 0.8823817688407467,
+      "n": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "interactive",
+      "condition": "F",
+      "accuracy": 1.0,
+      "ci_low": 0.565508505247919,
+      "ci_high": 1.0,
+      "n": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "interactive",
+      "condition": "T",
+      "accuracy": 1.0,
+      "ci_low": 0.565508505247919,
+      "ci_high": 1.0,
+      "n": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "quiz",
+      "condition": "F",
+      "accuracy": 1.0,
+      "ci_low": 0.565508505247919,
+      "ci_high": 1.0,
+      "n": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "quiz",
+      "condition": "T",
+      "accuracy": 1.0,
+      "ci_low": 0.565508505247919,
+      "ci_high": 1.0,
+      "n": 5
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "interactive",
+      "condition": "F",
+      "accuracy": 0.75,
+      "ci_low": 0.30063605244263664,
+      "ci_high": 0.9544139373553638,
+      "n": 4
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "interactive",
+      "condition": "T",
+      "accuracy": 0.2,
+      "ci_low": 0.036223160969787456,
+      "ci_high": 0.6244717358814612,
+      "n": 5
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "quiz",
+      "condition": "F",
+      "accuracy": 0.75,
+      "ci_low": 0.30063605244263664,
+      "ci_high": 0.9544139373553638,
+      "n": 4
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "quiz",
+      "condition": "T",
+      "accuracy": 0.75,
+      "ci_low": 0.30063605244263664,
+      "ci_high": 0.9544139373553638,
+      "n": 4
+    },
     {
       "model_name": "mock-model",
       "task_type": "interactive",
@@ -40,6 +148,60 @@
   ],
   "gaps": [
     {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "interactive",
+      "f_accuracy": 0.8,
+      "t_accuracy": 0.2,
+      "tom_gap": -0.6000000000000001,
+      "n_f": 5,
+      "n_t": 5
+    },
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "task_type": "quiz",
+      "f_accuracy": 0.8,
+      "t_accuracy": 0.6,
+      "tom_gap": -0.20000000000000007,
+      "n_f": 5,
+      "n_t": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "interactive",
+      "f_accuracy": 1.0,
+      "t_accuracy": 1.0,
+      "tom_gap": 0.0,
+      "n_f": 5,
+      "n_t": 5
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "task_type": "quiz",
+      "f_accuracy": 1.0,
+      "t_accuracy": 1.0,
+      "tom_gap": 0.0,
+      "n_f": 5,
+      "n_t": 5
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "interactive",
+      "f_accuracy": 0.75,
+      "t_accuracy": 0.2,
+      "tom_gap": -0.55,
+      "n_f": 4,
+      "n_t": 5
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "task_type": "quiz",
+      "f_accuracy": 0.75,
+      "t_accuracy": 0.75,
+      "tom_gap": 0.0,
+      "n_f": 4,
+      "n_t": 4
+    },
+    {
       "model_name": "mock-model",
       "task_type": "interactive",
       "f_accuracy": 0.34,
@@ -59,6 +221,30 @@
     }
   ],
   "agreement": [
+    {
+      "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+      "interactive_accuracy": 0.5,
+      "quiz_accuracy": 0.7,
+      "point_difference": -0.19999999999999996,
+      "pearson_r": 0.2182178902359924,
+      "n_paired": 10
+    },
+    {
+      "model_name": "gemini:gemini-flash-lite-latest",
+      "interactive_accuracy": 1.0,
+      "quiz_accuracy": 1.0,
+      "point_difference": 0.0,
+      "pearson_r": null,
+      "n_paired": 10
+    },
+    {
+      "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+      "interactive_accuracy": 0.4444444444444444,
+      "quiz_accuracy": 0.75,
+      "point_difference": -0.3055555555555556,
+      "pearson_r": 0.0,
+      "n_paired": 8
+    },
     {
       "model_name": "mock-model",
       "interactive_accuracy": 0.26,

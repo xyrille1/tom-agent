@@ -1,0 +1,16 @@
+{
+  "id": "pair-11-F__gemini_gemini-flash-lite-latest__interactive",
+  "scenario_id": "pair-11-F",
+  "pair_id": "pair-11",
+  "condition": "F",
+  "model_name": "gemini:gemini-flash-lite-latest",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Aisha sets the recipe box down inside the wooden chest, in the mudroom.\n2. Aisha walks off toward the workshop.\n3. Separately, someone tidies the wicker basket in the basement, moving the headlamp into the shoe rack.\n4. With Aisha out of the room, the recipe box gets moved from the mudroom to the workshop, into the top drawer.\n5. Aisha is still in the workshop and hears nothing about it.\n\nAisha is about to go looking for the recipe box and will check exactly one location first. Place a helpful marker at the location where Aisha will look FIRST -- based on what Aisha personally knows, not necessarily where the recipe box actually is right now.\n\nValid locations: basement, hallway closet, workshop, mudroom\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"mudroom\"}",
+  "parsed_answer": "mudroom",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 1062.000000034459,
+  "error": null,
+  "created_at": "2026-07-13T18:40:31.838949+00:00"
+}

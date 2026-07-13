@@ -8,14 +8,18 @@ from .base import MissingAPIKeyError, ModelClient
 
 def get_configured_clients(*, verbose: bool = True) -> dict[str, ModelClient]:
     from .anthropic import AnthropicClient
+    from .cloudflare import CloudflareClient
     from .gemini import GeminiClient
     from .groq import GroqClient
+    from .huggingface import HuggingFaceClient
 
     clients: dict[str, ModelClient] = {}
     for label, factory in (
         ("Gemini", GeminiClient),
         ("Groq", GroqClient),
         ("Anthropic", AnthropicClient),
+        ("Hugging Face", HuggingFaceClient),
+        ("Cloudflare Workers AI", CloudflareClient),
     ):
         try:
             client = factory()

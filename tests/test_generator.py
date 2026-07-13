@@ -2,11 +2,18 @@ from tom_bench.generator import generate_pair, narrative_text
 from tom_bench.novelty import load_reference_corpus, novelty_check
 
 
+def _without_timestamp(scenario) -> dict:
+    return scenario.model_dump(exclude={"created_at"})
+
+
 def test_reproducibility_same_seed_same_output():
+    # created_at is wall-clock and intentionally excluded -- two separate
+    # calls with the same seed will differ there even though every
+    # deterministic field (world, event log, ground truth) must match.
     f1, t1 = generate_pair(seed=42)
     f2, t2 = generate_pair(seed=42)
-    assert f1.model_dump() == f2.model_dump()
-    assert t1.model_dump() == t2.model_dump()
+    assert _without_timestamp(f1) == _without_timestamp(f2)
+    assert _without_timestamp(t1) == _without_timestamp(t2)
 
 
 def test_different_seeds_differ():

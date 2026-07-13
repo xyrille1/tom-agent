@@ -1,9 +1,16 @@
 """Google Gemini client (free tier via Google AI Studio, no card required).
 
-Free-tier RPM/RPD limits shift over time -- confirm current numbers at
-https://ai.google.dev/gemini-api/docs/rate-limits before a real run. The
-4.5s default spacing assumes a conservative ~13 requests/minute ceiling;
-override GEMINI_MIN_INTERVAL_SECONDS if the live limit differs.
+Free-tier RPM/RPD limits -- and even which model IDs carry a nonzero free
+quota -- shift over time and vary per account; confirm current numbers at
+https://ai.google.dev/gemini-api/docs/rate-limits before a real run. In
+testing, versioned IDs like "gemini-2.0-flash-lite" returned a hard
+`limit: 0` free-tier quota on this account while the unversioned alias
+"gemini-flash-lite-latest" worked -- if you hit a 429 with `limit: 0` in the
+error body (not "quota exceeded" from actual usage), that means this model
+ID isn't free-tier-eligible on your account, not that you're rate-limited;
+try a different GEMINI_MODEL override. The 4.5s default spacing assumes a
+conservative ~13 requests/minute ceiling; override
+GEMINI_MIN_INTERVAL_SECONDS if the live limit differs.
 """
 from __future__ import annotations
 
@@ -13,7 +20,7 @@ import httpx
 
 from .base import MissingAPIKeyError
 
-DEFAULT_MODEL = "gemini-2.0-flash-lite"
+DEFAULT_MODEL = "gemini-flash-lite-latest"
 DEFAULT_MIN_INTERVAL = 4.5
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 

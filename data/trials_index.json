@@ -1,5 +1,65 @@
 [
   {
+    "id": "pair-0-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
     "id": "pair-0-F__mock-model__interactive",
     "scenario_id": "pair-0-F",
     "pair_id": "pair-0",
@@ -18,6 +78,66 @@
     "task_type": "quiz",
     "is_correct": false,
     "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-0-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-0-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-T__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-T__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-0-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
   },
   {
     "id": "pair-0-T__mock-model__interactive",
@@ -40,6 +160,66 @@
     "failure_tag": "picked_neither_location"
   },
   {
+    "id": "pair-1-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-1-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-F__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-F__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-1-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
     "id": "pair-1-F__mock-model__interactive",
     "scenario_id": "pair-1-F",
     "pair_id": "pair-1",
@@ -55,6 +235,66 @@
     "pair_id": "pair-1",
     "condition": "F",
     "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
     "task_type": "quiz",
     "is_correct": true,
     "failure_tag": null
@@ -80,6 +320,46 @@
     "failure_tag": "wrong_belief_location"
   },
   {
+    "id": "pair-10-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-F__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-F__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
     "id": "pair-10-F__mock-model__interactive",
     "scenario_id": "pair-10-F",
     "pair_id": "pair-10",
@@ -98,6 +378,66 @@
     "task_type": "quiz",
     "is_correct": false,
     "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-10-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-10-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-T__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-T__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-10-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-10-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
   },
   {
     "id": "pair-10-T__mock-model__interactive",
@@ -120,6 +460,66 @@
     "failure_tag": "picked_neither_location"
   },
   {
+    "id": "pair-11-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-11-F__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-F__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
     "id": "pair-11-F__mock-model__interactive",
     "scenario_id": "pair-11-F",
     "pair_id": "pair-11",
@@ -138,6 +538,66 @@
     "task_type": "quiz",
     "is_correct": true,
     "failure_tag": null
+  },
+  {
+    "id": "pair-11-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-11-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-11-T__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-T__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-11-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
   },
   {
     "id": "pair-11-T__mock-model__interactive",
@@ -160,6 +620,66 @@
     "failure_tag": "picked_neither_location"
   },
   {
+    "id": "pair-12-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
     "id": "pair-12-F__mock-model__interactive",
     "scenario_id": "pair-12-F",
     "pair_id": "pair-12",
@@ -178,6 +698,56 @@
     "task_type": "quiz",
     "is_correct": false,
     "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-12-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-12-T__cloudflare_@cf_meta_llama-3.1-8b-instruct__quiz",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-12-T__gemini_gemini-flash-lite-latest__interactive",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-T__gemini_gemini-flash-lite-latest__quiz",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "gemini:gemini-flash-lite-latest",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-T__huggingface_meta-llama_Llama-3.1-8B-Instruct__interactive",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
   },
   {
     "id": "pair-12-T__mock-model__interactive",

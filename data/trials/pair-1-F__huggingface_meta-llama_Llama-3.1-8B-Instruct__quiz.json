@@ -1,0 +1,16 @@
+{
+  "id": "pair-1-F__huggingface_meta-llama_Llama-3.1-8B-Instruct__quiz",
+  "scenario_id": "pair-1-F",
+  "pair_id": "pair-1",
+  "condition": "F",
+  "model_name": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Rafael puts the candle in the top drawer in the attic.\n2. Rafael then heads to the sunroom.\n3. While Rafael is away, someone moves the candle from the top drawer in the attic to the backpack in the garage.\n4. Rafael remains in the sunroom, unaware anything has changed.\n\nQuestion: Where will Rafael look for the candle FIRST?\n\nA) attic\nB) garage\nC) sunroom\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "attic",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 1280.9999999590218,
+  "error": null,
+  "created_at": "2026-07-13T18:50:47.871216+00:00"
+}

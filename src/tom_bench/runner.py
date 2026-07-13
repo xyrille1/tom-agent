@@ -38,6 +38,10 @@ def run_single_trial(scenario: Scenario, client: ModelClient, task_type: TaskTyp
     started = time.monotonic()
     try:
         raw = client.generate(prompt)
+        if not isinstance(raw, str):
+            raise TypeError(
+                f"{client.name}.generate() must return str, got {type(raw).__name__}: {raw!r:.300}"
+            )
     except Exception as exc:
         latency_ms = (time.monotonic() - started) * 1000
         return Trial(

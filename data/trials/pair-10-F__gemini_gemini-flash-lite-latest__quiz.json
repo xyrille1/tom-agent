@@ -1,0 +1,16 @@
+{
+  "id": "pair-10-F__gemini_gemini-flash-lite-latest__quiz",
+  "scenario_id": "pair-10-F",
+  "pair_id": "pair-10",
+  "condition": "F",
+  "model_name": "gemini:gemini-flash-lite-latest",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the sunroom, Elena places the tackle box into the cardboard box.\n2. A moment later, Elena leaves for the hallway closet.\n3. At the same time, the clipboard is shifted from the backpack to the wooden chest in the hallway closet, unrelated to the tackle box's whereabouts.\n4. With Elena out of the room, the tackle box gets moved from the sunroom to the pantry, into the storage bin.\n5. No word reaches Elena, who is occupied in the hallway closet.\n\nQuestion: Where will Elena look for the tackle box FIRST?\n\nA) sunroom\nB) hallway closet\nC) pantry\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "sunroom",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 936.9999999762513,
+  "error": null,
+  "created_at": "2026-07-13T18:40:08.285298+00:00"
+}

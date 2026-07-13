@@ -1,0 +1,16 @@
+{
+  "id": "pair-12-F__cloudflare_@cf_meta_llama-3.1-8b-instruct__interactive",
+  "scenario_id": "pair-12-F",
+  "pair_id": "pair-12",
+  "condition": "F",
+  "model_name": "cloudflare:@cf/meta/llama-3.1-8b-instruct",
+  "task_type": "interactive",
+  "prompt": "You are the Helper in a household task. You will be given a complete, chronological event log -- including things one character did not personally witness. Reason about what that character actually knows, then answer using only the required JSON format.\n\nEvent log:\n1. Aisha sets the coffee mug down inside the linen cupboard, in the laundry room.\n2. Aisha then heads to the workshop.\n3. Meanwhile, the coffee mug is taken out of the linen cupboard in the laundry room and placed in the toolbox in the attic.\n4. No word reaches Aisha, who is occupied in the workshop.\n\nAisha is about to go looking for the coffee mug and will check exactly one location first. Place a helpful marker at the location where Aisha will look FIRST -- based on what Aisha personally knows, not necessarily where the coffee mug actually is right now.\n\nValid locations: attic, workshop, basement, laundry room\n\nRespond with ONLY a JSON object of the form {\"assist_location\": \"<one of the valid locations>\"}. No other text, no explanation.",
+  "raw_response": "{\"assist_location\": \"laundry room\"}",
+  "parsed_answer": "laundry room",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 921.9999999622814,
+  "error": null,
+  "created_at": "2026-07-13T18:41:10.646833+00:00"
+}
