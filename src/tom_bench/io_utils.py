@@ -9,6 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SCENARIOS_DIR = REPO_ROOT / "data" / "scenarios"
 TRIALS_DIR = REPO_ROOT / "data" / "trials"
 SCORES_PATH = REPO_ROOT / "data" / "scores.json"
+TRIALS_INDEX_PATH = REPO_ROOT / "data" / "trials_index.json"
 
 
 def save_scenario(scenario: Scenario, directory: Path = SCENARIOS_DIR) -> Path:
@@ -53,4 +54,31 @@ def load_all_trials(directory: Path = TRIALS_DIR) -> list[Trial]:
 def save_scores(scores: ScoresFile, path: Path = SCORES_PATH) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(scores.model_dump_json(indent=2), encoding="utf-8")
+    return path
+
+
+def build_trials_index(trials: list[Trial]) -> list[dict]:
+    """Lightweight manifest the static site fetches to browse trials, since
+    a GitHub Pages site cannot list a directory's files on its own -- it
+    needs an explicit index of which trial IDs exist (FR14)."""
+    return [
+        {
+            "id": t.id,
+            "scenario_id": t.scenario_id,
+            "pair_id": t.pair_id,
+            "condition": t.condition,
+            "model_name": t.model_name,
+            "task_type": t.task_type,
+            "is_correct": t.is_correct,
+            "failure_tag": t.failure_tag,
+        }
+        for t in trials
+    ]
+
+
+def save_trials_index(trials: list[Trial], path: Path = TRIALS_INDEX_PATH) -> Path:
+    import json
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(build_trials_index(trials), indent=2), encoding="utf-8")
     return path

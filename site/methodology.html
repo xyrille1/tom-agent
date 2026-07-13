@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToM Benchmark — Methodology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Theory-of-Mind Benchmark</h1>
+      <nav class="site-nav">
+        <a href="index.html">Leaderboard</a>
+        <a href="replay.html">Trial replay</a>
+        <a href="methodology.html" aria-current="page">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="lede">
+      This page exists to answer one question a technically literate reader should ask:
+      <em>how do I know this isn't just Sally-Anne with new names?</em>
+    </p>
+
+    <div class="card">
+      <h2 style="margin-top:0;">The task</h2>
+      <p>
+        Each scenario is a small procedurally-generated household world (3–4 rooms, containers,
+        everyday objects). A target object is placed in room <strong>P</strong> while a scripted
+        NPC ("the Seeker") watches. The Seeker then leaves for room <strong>Q</strong>. While the
+        Seeker is away, the object is moved to room <strong>R</strong>.
+      </p>
+      <p>
+        The model under test (the Helper) sees the <em>entire</em> event log — including the move
+        the Seeker never witnessed — and must place an assist marker at the room where the Seeker
+        will look <strong>first</strong>. In the <strong>interactive</strong> framing this is a
+        forced placement action; in the <strong>quiz</strong> framing it's a 3-way multiple-choice
+        question generated from the same scenario data, so the two task types never drift out of
+        sync with each other.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Why the control condition matters</h2>
+      <p>
+        Every scenario is generated as a <strong>matched pair</strong>: a false-belief trial (F)
+        where correct = P (what the Seeker still believes) and a true-belief control (T), built
+        from the identical world and move event, where the Seeker is truthfully told about the
+        move and correct = R (the true, current location). F and T are held to <em>identical</em>
+        room count, object count, and event count — the only thing that differs is whether the
+        Seeker's belief tracks reality.
+      </p>
+      <p>
+        This is the point of the whole design: a model that just reports the true state of the
+        world will score well on T and badly on F. A model that's actually modeling the Seeker's
+        belief will score well on <em>both</em>. The <strong>ToM gap</strong>
+        (accuracy(T) − accuracy(F)) is reported per model as the headline number, alongside plain
+        accuracy, because a gap near zero and a gap near one both fail to distinguish "isn't
+        tracking beliefs at all" from "always predicts the last-seen location regardless of
+        condition" — the gap plus both raw accuracies together are what's diagnostic, not the gap
+        alone.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Guarding against contamination</h2>
+      <p>
+        Classic false-belief vignettes ("Sally puts her marble in a basket…") are almost certainly
+        in every frontier model's training data verbatim. A benchmark that reuses that shape risks
+        measuring memorized pattern-completion, not belief modeling. This project avoids the
+        classic vignette's fixed names and objects entirely (no "Sally," "Anne," "basket," or
+        "marble" anywhere in the generator), procedurally randomizes room count, object identity,
+        NPC name, and container choice per scenario from a seed, and renders the narrative through
+        several paraphrase templates per story beat rather than one fixed sentence.
+      </p>
+      <p>
+        Every generated scenario is additionally run through a lightweight
+        <strong>novelty check</strong> — trigram (3-word) Jaccard overlap against a small reference
+        corpus of classic false-belief vignette paraphrases — and rejected/regenerated if the
+        overlap exceeds a threshold. <strong>This is a heuristic, not a guarantee.</strong> It
+        catches gross textual overlap (e.g. a template bug that reproduces the textbook paragraph
+        shape); it does not prove semantic novelty, and a model could in principle still recognize
+        the underlying task structure without lexical overlap. We report this limitation
+        explicitly rather than claiming contamination is solved.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Scoring &amp; failure taxonomy</h2>
+      <p>
+        A model's raw response is parsed for a structured JSON answer; if no valid location can be
+        extracted, the trial is tagged <code>unparseable</code> and excluded from accuracy (not
+        silently scored wrong). Wrong answers are further tagged:
+      </p>
+      <ul>
+        <li><code>used_true_state_instead_of_belief</code> — the model answered with the object's
+          actual current location instead of the Seeker's belief (only meaningful on F trials —
+          the classic "failure to model false belief" signature).</li>
+        <li><code>picked_neither_location</code> — the model named a room that is neither the
+          believed nor the true location (e.g. the decoy room).</li>
+        <li><code>wrong_belief_location</code> — a residual bucket for answers that don't fit the
+          above (e.g. wrong on the true-belief control despite naming a plausible room).</li>
+      </ul>
+      <p>
+        Accuracy is reported with a 95% Wilson score confidence interval (more reliable than the
+        normal approximation at this sample size and at accuracy values near 0 or 1).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Free-tier disclosure</h2>
+      <p>
+        This project runs entirely on free-tier infrastructure: Google Gemini (Google AI Studio's
+        permanent free tier), an open-weight model via Groq's free tier, and Anthropic Claude on
+        the one-time free signup credit. Free-tier request/rate limits and model availability
+        change over time; the batch runner records which model identifier answered each trial (see
+        the <code>model_name</code> field on any trial in the <a href="replay.html">replay
+        view</a>), and the leaderboard should be read as "results captured under the free-tier
+        terms in effect at generation time," not a permanent characterization of a model family.
+      </p>
+      <p class="muted" style="font-size:0.85rem;">
+        The data currently shown on the leaderboard was generated with the pipeline's mock model
+        client (<code>scripts/run_batch.py --mock</code>) to validate the engine end-to-end at zero
+        cost and with no API keys required. It exercises the full generation → scoring → display
+        pipeline but is <strong>not</strong> a real model result — treat any numbers you see as a
+        pipeline smoke test until this note is updated to reflect a run against real free-tier
+        model APIs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Known limitations</h2>
+      <ul>
+        <li>Tier 1 only (single NPC, single false-belief event, at most one distractor event,
+          first-order belief). Multi-NPC, lied-to, and second-order-belief scenarios are out of
+          scope for this MVP.</li>
+        <li>Small sample size (50 matched pairs at MVP scale) — confidence intervals are reported
+          honestly and should be read as a first data point, not a definitive claim.</li>
+        <li>The novelty check is a heuristic (see above) — not proof of non-contamination.</li>
+        <li>The Seeker's belief-update rule is simple (last personally-observed location, or a
+          fixed room-sweep fallback) — it does not model the Seeker reasoning about anyone else's
+          beliefs in turn.</li>
+      </ul>
+    </div>
+
+    <p class="footnote">
+      Source: this entire pipeline — scenario engine, deterministic Seeker, model clients, scoring,
+      and this site — is a plain Python + static-HTML project with no database and no required
+      spend. See the repository's PRD (<code>tom-benchmark-prd-mvp.md</code>) for full design
+      rationale.
+    </p>
+  </main>
+</body>
+</html>

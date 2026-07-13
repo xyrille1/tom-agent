@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToM Benchmark — Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Theory-of-Mind Benchmark</h1>
+      <nav class="site-nav">
+        <a href="index.html" aria-current="page">Leaderboard</a>
+        <a href="replay.html">Trial replay</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="lede">
+      Every model below is scored on a matched pair of conditions per scenario: a
+      <strong>false-belief (F)</strong> trial, where the correct answer requires modeling what an
+      NPC still believes despite the world having changed, and a <strong>true-belief control
+      (T)</strong> trial with identical complexity. The <strong>ToM gap</strong> (T accuracy − F
+      accuracy) isolates belief-modeling failure from scenario-comprehension failure. Every number
+      here links to inspectable trials on the <a href="replay.html">replay page</a>.
+    </p>
+
+    <h2>ToM gap by model</h2>
+    <div class="card">
+      <div id="gap-legend" class="legend"></div>
+      <div id="gap-chart"></div>
+      <p id="gap-empty" class="empty-state" hidden>No scored trials yet. Run the batch pipeline to populate this page.</p>
+    </div>
+
+    <h2>Accuracy by model, condition, and task type</h2>
+    <div class="card">
+      <table id="scores-table">
+        <thead>
+          <tr>
+            <th data-sort-key="model" data-sort-type="string">Model</th>
+            <th data-sort-key="task" data-sort-type="string">Task</th>
+            <th data-sort-key="condition" data-sort-type="string">Condition</th>
+            <th data-sort-key="acc" data-sort-type="number" class="num">Accuracy</th>
+            <th data-sort-key="ci" data-sort-type="string" class="num">95% CI</th>
+            <th data-sort-key="n" data-sort-type="number" class="num">n</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="scores-empty" class="empty-state" hidden>No scores.json data found.</p>
+    </div>
+
+    <h2>Interactive-task vs. quiz-task agreement</h2>
+    <div class="card">
+      <table id="agreement-table">
+        <thead>
+          <tr>
+            <th data-sort-key="model" data-sort-type="string">Model</th>
+            <th data-sort-key="interactive" data-sort-type="number" class="num">Interactive acc.</th>
+            <th data-sort-key="quiz" data-sort-type="number" class="num">Quiz acc.</th>
+            <th data-sort-key="diff" data-sort-type="number" class="num">Point diff.</th>
+            <th data-sort-key="pearson" data-sort-type="number" class="num">Pearson r</th>
+            <th data-sort-key="npaired" data-sort-type="number" class="num">n paired</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="muted" style="font-size:0.82rem;margin-top:10px;">
+        Pearson r is computed only over scenarios each model answered under <em>both</em> task
+        types; small n here is expected at MVP scale (§FR11 — reported as a first data point, not
+        a final claim).
+      </p>
+    </div>
+
+    <p class="footnote">
+      Generated from committed JSON in <code>data/</code> — no live model calls happen on this
+      page. See <a href="methodology.html">methodology</a> for the free-tier disclosure note and
+      generation date.
+    </p>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

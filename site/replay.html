@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToM Benchmark — Trial Replay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Theory-of-Mind Benchmark</h1>
+      <nav class="site-nav">
+        <a href="index.html">Leaderboard</a>
+        <a href="replay.html" aria-current="page">Trial replay</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="lede">
+      Every trial here is a real, stored transcript — the scenario's full event log, the exact
+      prompt sent to the model, its raw response, and how it was scored. Pick a trial from the
+      list to replay it.
+    </p>
+
+    <div class="filters">
+      <select id="filter-model"><option value="">All models</option></select>
+      <select id="filter-task"><option value="">All task types</option></select>
+      <select id="filter-condition"><option value="">All conditions</option></select>
+      <select id="filter-correct">
+        <option value="">Correct + incorrect</option>
+        <option value="true">Correct only</option>
+        <option value="false">Incorrect only</option>
+      </select>
+    </div>
+
+    <div class="card" style="display:grid; grid-template-columns: 300px 1fr; gap:20px; align-items:start;">
+      <div>
+        <div id="trial-list" class="trial-list"></div>
+        <p id="list-empty" class="empty-state" hidden>No trials found. Run the batch pipeline first.</p>
+      </div>
+      <div id="trial-detail">
+        <p class="empty-state">Select a trial on the left to replay it.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="replay.js"></script>
+</body>
+</html>
