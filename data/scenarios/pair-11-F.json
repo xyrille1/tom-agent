@@ -1,0 +1,104 @@
+{
+  "id": "pair-11-F",
+  "pair_id": "pair-11",
+  "condition": "F",
+  "tier": 1,
+  "seed": 11,
+  "seeker_name": "Aisha",
+  "target_object": "recipe box",
+  "rooms": [
+    {
+      "name": "basement",
+      "containers": [
+        "storage bin",
+        "wicker basket",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "plastic tote",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "top drawer"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wooden chest",
+        "wicker basket"
+      ]
+    }
+  ],
+  "room_order": [
+    "hallway closet",
+    "mudroom",
+    "workshop",
+    "basement"
+  ],
+  "initial_location": "mudroom",
+  "seeker_away_room": "workshop",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha sets the recipe box down inside the wooden chest, in the mudroom.",
+      "actor": "Aisha",
+      "object": "recipe box",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha walks off toward the workshop.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "mudroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the wicker basket in the basement, moving the headlamp into the shoe rack.",
+      "actor": null,
+      "object": "headlamp",
+      "from_loc": "basement",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Aisha out of the room, the recipe box gets moved from the mudroom to the workshop, into the top drawer.",
+      "actor": null,
+      "object": "recipe box",
+      "from_loc": "mudroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Aisha is still in the workshop and hears nothing about it.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "basement",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.494755+00:00"
+}

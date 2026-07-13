@@ -1,0 +1,97 @@
+{
+  "id": "pair-14-T",
+  "pair_id": "pair-14",
+  "condition": "T",
+  "tier": 1,
+  "seed": 14,
+  "seeker_name": "Rafael",
+  "target_object": "spare batteries",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "wooden chest",
+        "bookshelf cubby",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "backpack",
+        "wooden chest",
+        "bookshelf cubby"
+      ]
+    }
+  ],
+  "room_order": [
+    "sunroom",
+    "workshop",
+    "basement"
+  ],
+  "initial_location": "sunroom",
+  "seeker_away_room": "workshop",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Rafael sets the spare batteries down inside the wooden chest, in the sunroom.",
+      "actor": "Rafael",
+      "object": "spare batteries",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Rafael walks off toward the workshop.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "sunroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the backpack in the basement, moving the harmonica into the bookshelf cubby.",
+      "actor": null,
+      "object": "harmonica",
+      "from_loc": "basement",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "While Rafael is away, someone moves the spare batteries from the wooden chest in the sunroom to the bookshelf cubby in the workshop.",
+      "actor": null,
+      "object": "spare batteries",
+      "from_loc": "sunroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Rafael in the workshop and mentions that the spare batteries is now in the bookshelf cubby in the workshop.",
+      "actor": "Rafael",
+      "object": "spare batteries",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "workshop",
+  "decoy_room": "basement",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.501506+00:00"
+}

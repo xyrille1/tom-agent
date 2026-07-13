@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-13T17:51:11.284523+00:00",
+  "rows": [
+    {
+      "model_name": "mock-model",
+      "task_type": "interactive",
+      "condition": "F",
+      "accuracy": 0.34,
+      "ci_low": 0.2243676963506106,
+      "ci_high": 0.47846431458517147,
+      "n": 50
+    },
+    {
+      "model_name": "mock-model",
+      "task_type": "interactive",
+      "condition": "T",
+      "accuracy": 0.18,
+      "ci_low": 0.0977008273245379,
+      "ci_high": 0.3079631945470261,
+      "n": 50
+    },
+    {
+      "model_name": "mock-model",
+      "task_type": "quiz",
+      "condition": "F",
+      "accuracy": 0.3,
+      "ci_low": 0.1910338908960936,
+      "ci_high": 0.4375061227736338,
+      "n": 50
+    },
+    {
+      "model_name": "mock-model",
+      "task_type": "quiz",
+      "condition": "T",
+      "accuracy": 0.28,
+      "ci_low": 0.17474014357680362,
+      "ci_high": 0.4166538714598967,
+      "n": 50
+    }
+  ],
+  "gaps": [
+    {
+      "model_name": "mock-model",
+      "task_type": "interactive",
+      "f_accuracy": 0.34,
+      "t_accuracy": 0.18,
+      "tom_gap": -0.16000000000000003,
+      "n_f": 50,
+      "n_t": 50
+    },
+    {
+      "model_name": "mock-model",
+      "task_type": "quiz",
+      "f_accuracy": 0.3,
+      "t_accuracy": 0.28,
+      "tom_gap": -0.019999999999999962,
+      "n_f": 50,
+      "n_t": 50
+    }
+  ],
+  "agreement": [
+    {
+      "model_name": "mock-model",
+      "interactive_accuracy": 0.26,
+      "quiz_accuracy": 0.29,
+      "point_difference": -0.02999999999999997,
+      "pearson_r": -0.22809992669013668,
+      "n_paired": 100
+    }
+  ]
+}

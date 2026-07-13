@@ -1,0 +1,102 @@
+{
+  "id": "pair-30-T",
+  "pair_id": "pair-30",
+  "condition": "T",
+  "tier": 1,
+  "seed": 30,
+  "seeker_name": "Diego",
+  "target_object": "bicycle pump",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "cardboard box",
+        "toolbox"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "plastic tote",
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "home office",
+    "mudroom",
+    "sunroom",
+    "kitchen"
+  ],
+  "initial_location": "home office",
+  "seeker_away_room": "mudroom",
+  "final_location": "kitchen",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the home office, Diego places the bicycle pump into the shoe rack.",
+      "actor": "Diego",
+      "object": "bicycle pump",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Diego steps out and goes to the mudroom.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": "home office",
+      "to_loc": "mudroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the puzzle box is shifted from the toolbox to the cardboard box in the sunroom, unrelated to the bicycle pump's whereabouts.",
+      "actor": null,
+      "object": "puzzle box",
+      "from_loc": "sunroom",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the bicycle pump is taken out of the shoe rack in the home office and placed in the wicker basket in the kitchen.",
+      "actor": null,
+      "object": "bicycle pump",
+      "from_loc": "home office",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "A message reaches Diego in the mudroom: the bicycle pump is now in the kitchen, inside the wicker basket.",
+      "actor": "Diego",
+      "object": "bicycle pump",
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "kitchen",
+  "decoy_room": "sunroom",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.543241+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "pair-44-T",
+  "pair_id": "pair-44",
+  "condition": "T",
+  "tier": 1,
+  "seed": 44,
+  "seeker_name": "Rafael",
+  "target_object": "spool of wire",
+  "rooms": [
+    {
+      "name": "basement",
+      "containers": [
+        "storage bin",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "storage bin"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "top drawer"
+      ]
+    }
+  ],
+  "room_order": [
+    "basement",
+    "bedroom",
+    "garage",
+    "mudroom"
+  ],
+  "initial_location": "bedroom",
+  "seeker_away_room": "garage",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the bedroom, Rafael places the spool of wire into the top drawer.",
+      "actor": "Rafael",
+      "object": "spool of wire",
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Rafael walks off toward the garage.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "bedroom",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the paint roller is shifted from the storage bin to the wooden chest in the basement, unrelated to the spool of wire's whereabouts.",
+      "actor": null,
+      "object": "paint roller",
+      "from_loc": "basement",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "While Rafael is away, someone moves the spool of wire from the top drawer in the bedroom to the linen cupboard in the garage.",
+      "actor": null,
+      "object": "spool of wire",
+      "from_loc": "bedroom",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Rafael in the garage and mentions that the spool of wire is now in the linen cupboard in the garage.",
+      "actor": "Rafael",
+      "object": "spool of wire",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "garage",
+  "decoy_room": "basement",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.576808+00:00"
+}

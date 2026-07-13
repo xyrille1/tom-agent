@@ -1,0 +1,103 @@
+{
+  "id": "pair-23-F",
+  "pair_id": "pair-23",
+  "condition": "F",
+  "tier": 1,
+  "seed": 23,
+  "seeker_name": "Elena",
+  "target_object": "rain jacket",
+  "rooms": [
+    {
+      "name": "garage",
+      "containers": [
+        "toolbox",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "wicker basket",
+        "storage bin"
+      ]
+    },
+    {
+      "name": "sunroom",
+      "containers": [
+        "backpack",
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "kitchen",
+    "sunroom",
+    "garage",
+    "attic"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "kitchen",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Elena puts the rain jacket in the linen cupboard in the attic.",
+      "actor": "Elena",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Elena leaves for the kitchen.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the hand mirror is shifted from the wicker basket to the storage bin in the kitchen, unrelated to the rain jacket's whereabouts.",
+      "actor": null,
+      "object": "hand mirror",
+      "from_loc": "kitchen",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the rain jacket is taken out of the linen cupboard in the attic and placed in the shoe rack in the garage.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "attic",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Elena is still in the kitchen and hears nothing about it.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "attic",
+  "decoy_room": "kitchen",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.524270+00:00"
+}

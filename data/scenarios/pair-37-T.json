@@ -1,0 +1,94 @@
+{
+  "id": "pair-37-T",
+  "pair_id": "pair-37",
+  "condition": "T",
+  "tier": 1,
+  "seed": 37,
+  "seeker_name": "Rafael",
+  "target_object": "letter opener",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "backpack",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "plastic tote"
+      ]
+    }
+  ],
+  "room_order": [
+    "sunroom",
+    "basement",
+    "workshop"
+  ],
+  "initial_location": "workshop",
+  "seeker_away_room": "basement",
+  "final_location": "sunroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the workshop, Rafael places the letter opener into the backpack.",
+      "actor": "Rafael",
+      "object": "letter opener",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Rafael leaves for the basement.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "workshop",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the spool of wire is shifted from the plastic tote to the plastic tote in the basement, unrelated to the letter opener's whereabouts.",
+      "actor": null,
+      "object": "spool of wire",
+      "from_loc": "basement",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "While Rafael is away, someone moves the letter opener from the backpack in the workshop to the plastic tote in the sunroom.",
+      "actor": null,
+      "object": "letter opener",
+      "from_loc": "workshop",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Before returning, Rafael learns that the letter opener was moved to the plastic tote in the sunroom.",
+      "actor": "Rafael",
+      "object": "letter opener",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "sunroom",
+  "decoy_room": "basement",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.559290+00:00"
+}

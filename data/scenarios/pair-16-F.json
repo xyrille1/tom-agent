@@ -1,0 +1,94 @@
+{
+  "id": "pair-16-F",
+  "pair_id": "pair-16",
+  "condition": "F",
+  "tier": 1,
+  "seed": 16,
+  "seeker_name": "Aisha",
+  "target_object": "thermos",
+  "rooms": [
+    {
+      "name": "hallway closet",
+      "containers": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "bookshelf cubby",
+        "wooden chest",
+        "storage bin"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "storage bin",
+        "cardboard box",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "hallway closet",
+    "mudroom",
+    "attic"
+  ],
+  "initial_location": "hallway closet",
+  "seeker_away_room": "pantry",
+  "final_location": "pantry",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha puts the thermos in the backpack in the hallway closet.",
+      "actor": "Aisha",
+      "object": "thermos",
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha steps out and goes to the pantry.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "hallway closet",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Aisha's absence, the thermos is relocated from the hallway closet's backpack to the pantry's storage bin.",
+      "actor": null,
+      "object": "thermos",
+      "from_loc": "hallway closet",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Aisha is still in the pantry and hears nothing about it.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "hallway closet",
+  "decoy_room": "mudroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.507552+00:00"
+}

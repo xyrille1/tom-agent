@@ -1,0 +1,96 @@
+{
+  "id": "pair-10-F",
+  "pair_id": "pair-10",
+  "condition": "F",
+  "tier": 1,
+  "seed": 10,
+  "seeker_name": "Elena",
+  "target_object": "tackle box",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "storage bin"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "backpack",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "sunroom",
+      "containers": [
+        "wicker basket",
+        "cardboard box",
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "sunroom",
+    "hallway closet"
+  ],
+  "initial_location": "sunroom",
+  "seeker_away_room": "hallway closet",
+  "final_location": "pantry",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the sunroom, Elena places the tackle box into the cardboard box.",
+      "actor": "Elena",
+      "object": "tackle box",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Elena leaves for the hallway closet.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": "sunroom",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the clipboard is shifted from the backpack to the wooden chest in the hallway closet, unrelated to the tackle box's whereabouts.",
+      "actor": null,
+      "object": "clipboard",
+      "from_loc": "hallway closet",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Elena out of the room, the tackle box gets moved from the sunroom to the pantry, into the storage bin.",
+      "actor": null,
+      "object": "tackle box",
+      "from_loc": "sunroom",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "No word reaches Elena, who is occupied in the hallway closet.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "sunroom",
+  "decoy_room": "hallway closet",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.492756+00:00"
+}

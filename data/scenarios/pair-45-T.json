@@ -1,0 +1,102 @@
+{
+  "id": "pair-45-T",
+  "pair_id": "pair-45",
+  "condition": "T",
+  "tier": 1,
+  "seed": 45,
+  "seeker_name": "Wren",
+  "target_object": "paint roller",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "filing cabinet",
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "top drawer"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "top drawer",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "hallway closet",
+    "garage",
+    "attic",
+    "pantry"
+  ],
+  "initial_location": "hallway closet",
+  "seeker_away_room": "pantry",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Wren puts the paint roller in the backpack in the hallway closet.",
+      "actor": "Wren",
+      "object": "paint roller",
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Wren then heads to the pantry.",
+      "actor": "Wren",
+      "object": null,
+      "from_loc": "hallway closet",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the tape measure is shifted from the cardboard box to the filing cabinet in the pantry, unrelated to the paint roller's whereabouts.",
+      "actor": null,
+      "object": "tape measure",
+      "from_loc": "pantry",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "While Wren is away, someone moves the paint roller from the backpack in the hallway closet to the top drawer in the garage.",
+      "actor": null,
+      "object": "paint roller",
+      "from_loc": "hallway closet",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Wren in the pantry and mentions that the paint roller is now in the top drawer in the garage.",
+      "actor": "Wren",
+      "object": "paint roller",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "garage",
+  "decoy_room": "attic",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.580221+00:00"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "pair-47-F",
+  "pair_id": "pair-47",
+  "condition": "F",
+  "tier": 1,
+  "seed": 47,
+  "seeker_name": "Yuki",
+  "target_object": "hand mirror",
+  "rooms": [
+    {
+      "name": "garage",
+      "containers": [
+        "filing cabinet",
+        "wooden chest",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "toolbox",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "cardboard box",
+        "top drawer",
+        "bookshelf cubby"
+      ]
+    }
+  ],
+  "room_order": [
+    "hallway closet",
+    "garage",
+    "pantry",
+    "basement"
+  ],
+  "initial_location": "hallway closet",
+  "seeker_away_room": "garage",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Yuki sets the hand mirror down inside the bookshelf cubby, in the hallway closet.",
+      "actor": "Yuki",
+      "object": "hand mirror",
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Yuki then heads to the garage.",
+      "actor": "Yuki",
+      "object": null,
+      "from_loc": "hallway closet",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the hand mirror is taken out of the bookshelf cubby in the hallway closet and placed in the shoe rack in the garage.",
+      "actor": null,
+      "object": "hand mirror",
+      "from_loc": "hallway closet",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Yuki is still in the garage and hears nothing about it.",
+      "actor": "Yuki",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "hallway closet",
+  "decoy_room": "basement",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.585218+00:00"
+}

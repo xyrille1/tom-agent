@@ -1,0 +1,92 @@
+{
+  "id": "pair-27-T",
+  "pair_id": "pair-27",
+  "condition": "T",
+  "tier": 1,
+  "seed": 27,
+  "seeker_name": "Dmitri",
+  "target_object": "harmonica",
+  "rooms": [
+    {
+      "name": "mudroom",
+      "containers": [
+        "top drawer"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "shoe rack",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "filing cabinet",
+        "toolbox"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "storage bin"
+      ]
+    }
+  ],
+  "room_order": [
+    "workshop",
+    "mudroom",
+    "home office",
+    "attic"
+  ],
+  "initial_location": "mudroom",
+  "seeker_away_room": "workshop",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Dmitri puts the harmonica in the top drawer in the mudroom.",
+      "actor": "Dmitri",
+      "object": "harmonica",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Dmitri steps out and goes to the workshop.",
+      "actor": "Dmitri",
+      "object": null,
+      "from_loc": "mudroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the harmonica is taken out of the top drawer in the mudroom and placed in the filing cabinet in the workshop.",
+      "actor": null,
+      "object": "harmonica",
+      "from_loc": "mudroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "A message reaches Dmitri in the workshop: the harmonica is now in the workshop, inside the filing cabinet.",
+      "actor": "Dmitri",
+      "object": "harmonica",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "workshop",
+  "decoy_room": "home office",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.534991+00:00"
+}

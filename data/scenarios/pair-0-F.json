@@ -1,0 +1,92 @@
+{
+  "id": "pair-0-F",
+  "pair_id": "pair-0",
+  "condition": "F",
+  "tier": 1,
+  "seed": 0,
+  "seeker_name": "Camille",
+  "target_object": "rain jacket",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "toolbox",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "filing cabinet",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "attic",
+    "basement",
+    "pantry",
+    "kitchen"
+  ],
+  "initial_location": "kitchen",
+  "seeker_away_room": "basement",
+  "final_location": "pantry",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the kitchen, Camille places the rain jacket into the filing cabinet.",
+      "actor": "Camille",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Camille steps out and goes to the basement.",
+      "actor": "Camille",
+      "object": null,
+      "from_loc": "kitchen",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the rain jacket is taken out of the filing cabinet in the kitchen and placed in the wooden chest in the pantry.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "kitchen",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Nobody tells Camille, who stays in the basement the whole time.",
+      "actor": "Camille",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "basement",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "kitchen",
+  "decoy_room": "basement",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.449271+00:00"
+}

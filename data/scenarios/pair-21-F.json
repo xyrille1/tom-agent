@@ -1,0 +1,86 @@
+{
+  "id": "pair-21-F",
+  "pair_id": "pair-21",
+  "condition": "F",
+  "tier": 1,
+  "seed": 21,
+  "seeker_name": "Dmitri",
+  "target_object": "candle",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "storage bin",
+        "backpack"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wicker basket",
+        "shoe rack",
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "cardboard box"
+      ]
+    }
+  ],
+  "room_order": [
+    "attic",
+    "mudroom",
+    "pantry"
+  ],
+  "initial_location": "pantry",
+  "seeker_away_room": "attic",
+  "final_location": "mudroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Dmitri tucks the candle away in the storage bin in the pantry.",
+      "actor": "Dmitri",
+      "object": "candle",
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Dmitri steps out and goes to the attic.",
+      "actor": "Dmitri",
+      "object": null,
+      "from_loc": "pantry",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "While Dmitri is away, someone moves the candle from the storage bin in the pantry to the plastic tote in the mudroom.",
+      "actor": null,
+      "object": "candle",
+      "from_loc": "pantry",
+      "to_loc": "mudroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Dmitri is still in the attic and hears nothing about it.",
+      "actor": "Dmitri",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "pantry",
+  "decoy_room": "attic",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.519268+00:00"
+}

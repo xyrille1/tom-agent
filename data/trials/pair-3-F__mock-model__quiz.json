@@ -1,0 +1,16 @@
+{
+  "id": "pair-3-F__mock-model__quiz",
+  "scenario_id": "pair-3-F",
+  "pair_id": "pair-3",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Amara tucks the rain jacket away in the bookshelf cubby in the basement.\n2. Amara then heads to the bedroom.\n3. While Amara is away, someone moves the rain jacket from the bookshelf cubby in the basement to the backpack in the bedroom.\n4. Nobody tells Amara, who stays in the bedroom the whole time.\n\nQuestion: Where will Amara look for the rain jacket FIRST?\n\nA) basement\nB) bedroom\nC) sunroom\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "sunroom",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.609556+00:00"
+}

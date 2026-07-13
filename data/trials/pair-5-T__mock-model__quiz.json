@@ -1,0 +1,16 @@
+{
+  "id": "pair-5-T__mock-model__quiz",
+  "scenario_id": "pair-5-T",
+  "pair_id": "pair-5",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Priya puts the portable speaker in the wicker basket in the laundry room.\n2. Priya walks off toward the kitchen.\n3. In Priya's absence, the portable speaker is relocated from the laundry room's wicker basket to the basement's filing cabinet.\n4. Priya is told, while still in the kitchen, that the portable speaker has been moved to the filing cabinet in the basement.\n\nQuestion: Where will Priya look for the portable speaker FIRST?\n\nA) basement\nB) mudroom\nC) laundry room\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "laundry room",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.698981+00:00"
+}

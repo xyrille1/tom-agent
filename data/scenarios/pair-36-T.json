@@ -1,0 +1,96 @@
+{
+  "id": "pair-36-T",
+  "pair_id": "pair-36",
+  "condition": "T",
+  "tier": 1,
+  "seed": 36,
+  "seeker_name": "Talia",
+  "target_object": "ball of twine",
+  "rooms": [
+    {
+      "name": "kitchen",
+      "containers": [
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wicker basket",
+        "storage bin",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "plastic tote",
+        "toolbox",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "wooden chest",
+        "shoe rack",
+        "top drawer"
+      ]
+    }
+  ],
+  "room_order": [
+    "kitchen",
+    "attic",
+    "mudroom",
+    "garage"
+  ],
+  "initial_location": "garage",
+  "seeker_away_room": "kitchen",
+  "final_location": "mudroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Talia sets the ball of twine down inside the wooden chest, in the garage.",
+      "actor": "Talia",
+      "object": "ball of twine",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Talia leaves for the kitchen.",
+      "actor": "Talia",
+      "object": null,
+      "from_loc": "garage",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "With Talia out of the room, the ball of twine gets moved from the garage to the mudroom, into the wicker basket.",
+      "actor": null,
+      "object": "ball of twine",
+      "from_loc": "garage",
+      "to_loc": "mudroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "A message reaches Talia in the kitchen: the ball of twine is now in the mudroom, inside the wicker basket.",
+      "actor": "Talia",
+      "object": "ball of twine",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "attic",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.556798+00:00"
+}

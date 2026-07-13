@@ -1,0 +1,85 @@
+{
+  "id": "pair-2-F",
+  "pair_id": "pair-2",
+  "condition": "F",
+  "tier": 1,
+  "seed": 2,
+  "seeker_name": "Ines",
+  "target_object": "puzzle box",
+  "rooms": [
+    {
+      "name": "garage",
+      "containers": [
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wooden chest",
+        "bookshelf cubby",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "mudroom",
+    "laundry room",
+    "garage"
+  ],
+  "initial_location": "mudroom",
+  "seeker_away_room": "laundry room",
+  "final_location": "laundry room",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the mudroom, Ines places the puzzle box into the linen cupboard.",
+      "actor": "Ines",
+      "object": "puzzle box",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Ines steps out and goes to the laundry room.",
+      "actor": "Ines",
+      "object": null,
+      "from_loc": "mudroom",
+      "to_loc": "laundry room",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the puzzle box is taken out of the linen cupboard in the mudroom and placed in the linen cupboard in the laundry room.",
+      "actor": null,
+      "object": "puzzle box",
+      "from_loc": "mudroom",
+      "to_loc": "laundry room",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "No word reaches Ines, who is occupied in the laundry room.",
+      "actor": "Ines",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "garage",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.458300+00:00"
+}

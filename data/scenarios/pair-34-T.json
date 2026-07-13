@@ -1,0 +1,94 @@
+{
+  "id": "pair-34-T",
+  "pair_id": "pair-34",
+  "condition": "T",
+  "tier": 1,
+  "seed": 34,
+  "seeker_name": "Wren",
+  "target_object": "ball of twine",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "filing cabinet",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "wooden chest",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "wicker basket",
+        "top drawer",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "kitchen",
+    "sunroom",
+    "workshop",
+    "home office"
+  ],
+  "initial_location": "sunroom",
+  "seeker_away_room": "workshop",
+  "final_location": "home office",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the sunroom, Wren places the ball of twine into the top drawer.",
+      "actor": "Wren",
+      "object": "ball of twine",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Wren leaves for the workshop.",
+      "actor": "Wren",
+      "object": null,
+      "from_loc": "sunroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Wren's absence, the ball of twine is relocated from the sunroom's top drawer to the home office's linen cupboard.",
+      "actor": null,
+      "object": "ball of twine",
+      "from_loc": "sunroom",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Wren is told, while still in the workshop, that the ball of twine has been moved to the linen cupboard in the home office.",
+      "actor": "Wren",
+      "object": "ball of twine",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "home office",
+  "decoy_room": "workshop",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.552797+00:00"
+}

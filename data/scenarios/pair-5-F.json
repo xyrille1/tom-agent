@@ -1,0 +1,92 @@
+{
+  "id": "pair-5-F",
+  "pair_id": "pair-5",
+  "condition": "F",
+  "tier": 1,
+  "seed": 5,
+  "seeker_name": "Priya",
+  "target_object": "portable speaker",
+  "rooms": [
+    {
+      "name": "mudroom",
+      "containers": [
+        "storage bin",
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "storage bin",
+        "toolbox"
+      ]
+    }
+  ],
+  "room_order": [
+    "laundry room",
+    "kitchen",
+    "basement",
+    "mudroom"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "kitchen",
+  "final_location": "basement",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Priya puts the portable speaker in the wicker basket in the laundry room.",
+      "actor": "Priya",
+      "object": "portable speaker",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Priya walks off toward the kitchen.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Priya's absence, the portable speaker is relocated from the laundry room's wicker basket to the basement's filing cabinet.",
+      "actor": null,
+      "object": "portable speaker",
+      "from_loc": "laundry room",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Nobody tells Priya, who stays in the kitchen the whole time.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "mudroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.475127+00:00"
+}

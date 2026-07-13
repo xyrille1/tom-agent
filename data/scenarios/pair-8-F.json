@@ -1,0 +1,83 @@
+{
+  "id": "pair-8-F",
+  "pair_id": "pair-8",
+  "condition": "F",
+  "tier": 1,
+  "seed": 8,
+  "seeker_name": "Rafael",
+  "target_object": "harmonica",
+  "rooms": [
+    {
+      "name": "laundry room",
+      "containers": [
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "top drawer"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "storage bin"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "laundry room",
+    "bedroom"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "pantry",
+  "final_location": "bedroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Rafael tucks the harmonica away in the bookshelf cubby in the laundry room.",
+      "actor": "Rafael",
+      "object": "harmonica",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Rafael then heads to the pantry.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Rafael's absence, the harmonica is relocated from the laundry room's bookshelf cubby to the bedroom's storage bin.",
+      "actor": null,
+      "object": "harmonica",
+      "from_loc": "laundry room",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Nobody tells Rafael, who stays in the pantry the whole time.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "pantry",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.485643+00:00"
+}

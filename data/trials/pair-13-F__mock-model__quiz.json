@@ -1,0 +1,16 @@
+{
+  "id": "pair-13-F__mock-model__quiz",
+  "scenario_id": "pair-13-F",
+  "pair_id": "pair-13",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Elena sets the packet of seeds down inside the wooden chest, in the bedroom.\n2. Elena steps out and goes to the workshop.\n3. At the same time, the magnifying glass is shifted from the top drawer to the top drawer in the workshop, unrelated to the packet of seeds's whereabouts.\n4. In Elena's absence, the packet of seeds is relocated from the bedroom's wooden chest to the home office's wicker basket.\n5. Elena is still in the workshop and hears nothing about it.\n\nQuestion: Where will Elena look for the packet of seeds FIRST?\n\nA) home office\nB) bedroom\nC) workshop\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "workshop",
+  "is_correct": false,
+  "failure_tag": "picked_neither_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.535317+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pair-18-T__mock-model__quiz",
+  "scenario_id": "pair-18-T",
+  "pair_id": "pair-18",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the workshop, Nadia places the wrench set into the plastic tote.\n2. Nadia walks off toward the garage.\n3. Separately, someone tidies the storage bin in the garage, moving the paint roller into the bookshelf cubby.\n4. Meanwhile, the wrench set is taken out of the plastic tote in the workshop and placed in the backpack in the hallway closet.\n5. Nadia is told, while still in the garage, that the wrench set has been moved to the backpack in the hallway closet.\n\nQuestion: Where will Nadia look for the wrench set FIRST?\n\nA) workshop\nB) garage\nC) hallway closet\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "workshop",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.556923+00:00"
+}

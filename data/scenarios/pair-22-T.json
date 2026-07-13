@@ -1,0 +1,86 @@
+{
+  "id": "pair-22-T",
+  "pair_id": "pair-22",
+  "condition": "T",
+  "tier": 1,
+  "seed": 22,
+  "seeker_name": "Aisha",
+  "target_object": "deck of cards",
+  "rooms": [
+    {
+      "name": "home office",
+      "containers": [
+        "wicker basket",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "plastic tote",
+        "filing cabinet",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "sunroom",
+      "containers": [
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "sunroom",
+    "kitchen",
+    "home office"
+  ],
+  "initial_location": "sunroom",
+  "seeker_away_room": "kitchen",
+  "final_location": "home office",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha sets the deck of cards down inside the wooden chest, in the sunroom.",
+      "actor": "Aisha",
+      "object": "deck of cards",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha then heads to the kitchen.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "sunroom",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "While Aisha is away, someone moves the deck of cards from the wooden chest in the sunroom to the top drawer in the home office.",
+      "actor": null,
+      "object": "deck of cards",
+      "from_loc": "sunroom",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "A message reaches Aisha in the kitchen: the deck of cards is now in the home office, inside the top drawer.",
+      "actor": "Aisha",
+      "object": "deck of cards",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "home office",
+  "decoy_room": "kitchen",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.522273+00:00"
+}

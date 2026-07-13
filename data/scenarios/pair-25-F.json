@@ -1,0 +1,92 @@
+{
+  "id": "pair-25-F",
+  "pair_id": "pair-25",
+  "condition": "F",
+  "tier": 1,
+  "seed": 25,
+  "seeker_name": "Diego",
+  "target_object": "compass",
+  "rooms": [
+    {
+      "name": "kitchen",
+      "containers": [
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "toolbox",
+        "top drawer",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "kitchen",
+    "hallway closet",
+    "attic",
+    "home office"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "hallway closet",
+  "final_location": "home office",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the attic, Diego places the compass into the linen cupboard.",
+      "actor": "Diego",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Diego steps out and goes to the hallway closet.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the compass is taken out of the linen cupboard in the attic and placed in the wooden chest in the home office.",
+      "actor": null,
+      "object": "compass",
+      "from_loc": "attic",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Nobody tells Diego, who stays in the hallway closet the whole time.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "attic",
+  "decoy_room": "kitchen",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.528914+00:00"
+}

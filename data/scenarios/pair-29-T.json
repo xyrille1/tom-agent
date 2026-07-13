@@ -1,0 +1,85 @@
+{
+  "id": "pair-29-T",
+  "pair_id": "pair-29",
+  "condition": "T",
+  "tier": 1,
+  "seed": 29,
+  "seeker_name": "Soren",
+  "target_object": "first aid kit",
+  "rooms": [
+    {
+      "name": "laundry room",
+      "containers": [
+        "top drawer",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "sunroom",
+      "containers": [
+        "toolbox",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "cardboard box"
+      ]
+    }
+  ],
+  "room_order": [
+    "workshop",
+    "sunroom",
+    "laundry room"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "sunroom",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Soren sets the first aid kit down inside the shoe rack, in the laundry room.",
+      "actor": "Soren",
+      "object": "first aid kit",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Soren steps out and goes to the sunroom.",
+      "actor": "Soren",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Soren's absence, the first aid kit is relocated from the laundry room's shoe rack to the workshop's cardboard box.",
+      "actor": null,
+      "object": "first aid kit",
+      "from_loc": "laundry room",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Before returning, Soren learns that the first aid kit was moved to the cardboard box in the workshop.",
+      "actor": "Soren",
+      "object": "first aid kit",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "workshop",
+  "decoy_room": "sunroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.540234+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pair-12-F__mock-model__quiz",
+  "scenario_id": "pair-12-F",
+  "pair_id": "pair-12",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Aisha sets the coffee mug down inside the linen cupboard, in the laundry room.\n2. Aisha then heads to the workshop.\n3. Meanwhile, the coffee mug is taken out of the linen cupboard in the laundry room and placed in the toolbox in the attic.\n4. No word reaches Aisha, who is occupied in the workshop.\n\nQuestion: Where will Aisha look for the coffee mug FIRST?\n\nA) workshop\nB) laundry room\nC) attic\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"C\"}",
+  "parsed_answer": "attic",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.532317+00:00"
+}

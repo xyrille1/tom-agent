@@ -1,0 +1,105 @@
+{
+  "id": "pair-35-T",
+  "pair_id": "pair-35",
+  "condition": "T",
+  "tier": 1,
+  "seed": 35,
+  "seeker_name": "Kofi",
+  "target_object": "portable speaker",
+  "rooms": [
+    {
+      "name": "bedroom",
+      "containers": [
+        "wooden chest",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wooden chest",
+        "plastic tote",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "linen cupboard",
+        "top drawer",
+        "filing cabinet"
+      ]
+    }
+  ],
+  "room_order": [
+    "laundry room",
+    "attic",
+    "mudroom",
+    "bedroom"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "laundry room",
+  "final_location": "mudroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Kofi sets the portable speaker down inside the linen cupboard, in the attic.",
+      "actor": "Kofi",
+      "object": "portable speaker",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Kofi leaves for the laundry room.",
+      "actor": "Kofi",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "laundry room",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the wooden chest in the bedroom, moving the spare charger into the linen cupboard.",
+      "actor": null,
+      "object": "spare charger",
+      "from_loc": "bedroom",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "In Kofi's absence, the portable speaker is relocated from the attic's linen cupboard to the mudroom's plastic tote.",
+      "actor": null,
+      "object": "portable speaker",
+      "from_loc": "attic",
+      "to_loc": "mudroom",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Kofi in the laundry room and mentions that the portable speaker is now in the plastic tote in the mudroom.",
+      "actor": "Kofi",
+      "object": "portable speaker",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "laundry room",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.554796+00:00"
+}

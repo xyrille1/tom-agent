@@ -1,0 +1,103 @@
+{
+  "id": "pair-9-T",
+  "pair_id": "pair-9",
+  "condition": "T",
+  "tier": 1,
+  "seed": 9,
+  "seeker_name": "Diego",
+  "target_object": "rain jacket",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "backpack",
+        "linen cupboard",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "shoe rack",
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "bedroom",
+    "laundry room",
+    "attic",
+    "sunroom"
+  ],
+  "initial_location": "bedroom",
+  "seeker_away_room": "attic",
+  "final_location": "laundry room",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Diego sets the rain jacket down inside the shoe rack, in the bedroom.",
+      "actor": "Diego",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Diego then heads to the attic.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": "bedroom",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the top drawer in the attic, moving the chess set into the backpack.",
+      "actor": null,
+      "object": "chess set",
+      "from_loc": "attic",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Diego out of the room, the rain jacket gets moved from the bedroom to the laundry room, into the filing cabinet.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "bedroom",
+      "to_loc": "laundry room",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Diego in the attic and mentions that the rain jacket is now in the filing cabinet in the laundry room.",
+      "actor": "Diego",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "sunroom",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.489759+00:00"
+}

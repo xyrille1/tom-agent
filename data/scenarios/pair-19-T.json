@@ -1,0 +1,86 @@
+{
+  "id": "pair-19-T",
+  "pair_id": "pair-19",
+  "condition": "T",
+  "tier": 1,
+  "seed": 19,
+  "seeker_name": "Ines",
+  "target_object": "binoculars",
+  "rooms": [
+    {
+      "name": "basement",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "shoe rack",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "wicker basket",
+        "linen cupboard",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "mudroom",
+    "garage",
+    "basement"
+  ],
+  "initial_location": "garage",
+  "seeker_away_room": "basement",
+  "final_location": "mudroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Ines sets the binoculars down inside the wooden chest, in the garage.",
+      "actor": "Ines",
+      "object": "binoculars",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Ines then heads to the basement.",
+      "actor": "Ines",
+      "object": null,
+      "from_loc": "garage",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Ines's absence, the binoculars is relocated from the garage's wooden chest to the mudroom's wicker basket.",
+      "actor": null,
+      "object": "binoculars",
+      "from_loc": "garage",
+      "to_loc": "mudroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Someone finds Ines in the basement and mentions that the binoculars is now in the wicker basket in the mudroom.",
+      "actor": "Ines",
+      "object": "binoculars",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "basement",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.514229+00:00"
+}

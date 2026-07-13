@@ -1,0 +1,16 @@
+{
+  "id": "pair-17-T__mock-model__quiz",
+  "scenario_id": "pair-17-T",
+  "pair_id": "pair-17",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Wren puts the compass in the bookshelf cubby in the attic.\n2. A moment later, Wren leaves for the bedroom.\n3. In Wren's absence, the compass is relocated from the attic's bookshelf cubby to the laundry room's cardboard box.\n4. Before returning, Wren learns that the compass was moved to the cardboard box in the laundry room.\n\nQuestion: Where will Wren look for the compass FIRST?\n\nA) laundry room\nB) attic\nC) bedroom\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "laundry room",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.552416+00:00"
+}

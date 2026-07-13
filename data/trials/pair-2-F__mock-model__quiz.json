@@ -1,0 +1,16 @@
+{
+  "id": "pair-2-F__mock-model__quiz",
+  "scenario_id": "pair-2-F",
+  "pair_id": "pair-2",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. While standing in the mudroom, Ines places the puzzle box into the linen cupboard.\n2. Ines steps out and goes to the laundry room.\n3. Meanwhile, the puzzle box is taken out of the linen cupboard in the mudroom and placed in the linen cupboard in the laundry room.\n4. No word reaches Ines, who is occupied in the laundry room.\n\nQuestion: Where will Ines look for the puzzle box FIRST?\n\nA) laundry room\nB) mudroom\nC) garage\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "laundry room",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.563458+00:00"
+}

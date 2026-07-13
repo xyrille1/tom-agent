@@ -1,0 +1,86 @@
+{
+  "id": "pair-3-T",
+  "pair_id": "pair-3",
+  "condition": "T",
+  "tier": 1,
+  "seed": 3,
+  "seeker_name": "Amara",
+  "target_object": "rain jacket",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "linen cupboard",
+        "backpack"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "linen cupboard",
+        "top drawer",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "backpack"
+      ]
+    }
+  ],
+  "room_order": [
+    "bedroom",
+    "sunroom",
+    "basement"
+  ],
+  "initial_location": "basement",
+  "seeker_away_room": "bedroom",
+  "final_location": "bedroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Amara tucks the rain jacket away in the bookshelf cubby in the basement.",
+      "actor": "Amara",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "basement",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Amara then heads to the bedroom.",
+      "actor": "Amara",
+      "object": null,
+      "from_loc": "basement",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "While Amara is away, someone moves the rain jacket from the bookshelf cubby in the basement to the backpack in the bedroom.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "basement",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Someone finds Amara in the bedroom and mentions that the rain jacket is now in the backpack in the bedroom.",
+      "actor": "Amara",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "bedroom",
+  "decoy_room": "sunroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.465308+00:00"
+}

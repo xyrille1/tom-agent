@@ -1,0 +1,16 @@
+{
+  "id": "pair-16-T__mock-model__quiz",
+  "scenario_id": "pair-16-T",
+  "pair_id": "pair-16",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Aisha puts the thermos in the backpack in the hallway closet.\n2. Aisha steps out and goes to the pantry.\n3. In Aisha's absence, the thermos is relocated from the hallway closet's backpack to the pantry's storage bin.\n4. Aisha is told, while still in the pantry, that the thermos has been moved to the storage bin in the pantry.\n\nQuestion: Where will Aisha look for the thermos FIRST?\n\nA) hallway closet\nB) pantry\nC) mudroom\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "hallway closet",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.548698+00:00"
+}

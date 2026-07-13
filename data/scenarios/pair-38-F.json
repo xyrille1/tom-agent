@@ -1,0 +1,107 @@
+{
+  "id": "pair-38-F",
+  "pair_id": "pair-38",
+  "condition": "F",
+  "tier": 1,
+  "seed": 38,
+  "seeker_name": "Soren",
+  "target_object": "travel mug",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "backpack",
+        "filing cabinet",
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "plastic tote",
+        "wicker basket",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "filing cabinet",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "filing cabinet",
+        "linen cupboard",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "garage",
+    "workshop",
+    "laundry room"
+  ],
+  "initial_location": "pantry",
+  "seeker_away_room": "workshop",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the pantry, Soren places the travel mug into the backpack.",
+      "actor": "Soren",
+      "object": "travel mug",
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Soren then heads to the workshop.",
+      "actor": "Soren",
+      "object": null,
+      "from_loc": "pantry",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the wicker basket in the garage, moving the sewing kit into the plastic tote.",
+      "actor": null,
+      "object": "sewing kit",
+      "from_loc": "garage",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Soren out of the room, the travel mug gets moved from the pantry to the workshop, into the wooden chest.",
+      "actor": null,
+      "object": "travel mug",
+      "from_loc": "pantry",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "No word reaches Soren, who is occupied in the workshop.",
+      "actor": "Soren",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "pantry",
+  "decoy_room": "garage",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.560924+00:00"
+}

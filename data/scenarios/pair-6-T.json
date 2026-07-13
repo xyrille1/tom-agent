@@ -1,0 +1,96 @@
+{
+  "id": "pair-6-T",
+  "pair_id": "pair-6",
+  "condition": "T",
+  "tier": 1,
+  "seed": 6,
+  "seeker_name": "Ines",
+  "target_object": "set of dice",
+  "rooms": [
+    {
+      "name": "hallway closet",
+      "containers": [
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "linen cupboard",
+        "backpack",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "cardboard box",
+        "wooden chest"
+      ]
+    }
+  ],
+  "room_order": [
+    "kitchen",
+    "hallway closet",
+    "attic"
+  ],
+  "initial_location": "kitchen",
+  "seeker_away_room": "hallway closet",
+  "final_location": "hallway closet",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Ines puts the set of dice in the wooden chest in the kitchen.",
+      "actor": "Ines",
+      "object": "set of dice",
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Ines leaves for the hallway closet.",
+      "actor": "Ines",
+      "object": null,
+      "from_loc": "kitchen",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the backpack in the attic, moving the rain jacket into the filing cabinet.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "attic",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Ines out of the room, the set of dice gets moved from the kitchen to the hallway closet, into the wicker basket.",
+      "actor": null,
+      "object": "set of dice",
+      "from_loc": "kitchen",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Ines in the hallway closet and mentions that the set of dice is now in the wicker basket in the hallway closet.",
+      "actor": "Ines",
+      "object": "set of dice",
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "hallway closet",
+  "decoy_room": "attic",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.480644+00:00"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "pair-46-F",
+  "pair_id": "pair-46",
+  "condition": "F",
+  "tier": 1,
+  "seed": 46,
+  "seeker_name": "Priya",
+  "target_object": "sketchbook",
+  "rooms": [
+    {
+      "name": "pantry",
+      "containers": [
+        "storage bin",
+        "plastic tote",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "sunroom",
+      "containers": [
+        "cardboard box",
+        "bookshelf cubby",
+        "top drawer"
+      ]
+    }
+  ],
+  "room_order": [
+    "sunroom",
+    "pantry",
+    "kitchen"
+  ],
+  "initial_location": "sunroom",
+  "seeker_away_room": "kitchen",
+  "final_location": "kitchen",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Priya tucks the sketchbook away in the top drawer in the sunroom.",
+      "actor": "Priya",
+      "object": "sketchbook",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Priya leaves for the kitchen.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": "sunroom",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "With Priya out of the room, the sketchbook gets moved from the sunroom to the kitchen, into the linen cupboard.",
+      "actor": null,
+      "object": "sketchbook",
+      "from_loc": "sunroom",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "No word reaches Priya, who is occupied in the kitchen.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "sunroom",
+  "decoy_room": "pantry",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.583218+00:00"
+}

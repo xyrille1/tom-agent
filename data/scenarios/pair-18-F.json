@@ -1,0 +1,95 @@
+{
+  "id": "pair-18-F",
+  "pair_id": "pair-18",
+  "condition": "F",
+  "tier": 1,
+  "seed": 18,
+  "seeker_name": "Nadia",
+  "target_object": "wrench set",
+  "rooms": [
+    {
+      "name": "garage",
+      "containers": [
+        "storage bin",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "plastic tote",
+        "backpack"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "backpack"
+      ]
+    }
+  ],
+  "room_order": [
+    "garage",
+    "hallway closet",
+    "workshop"
+  ],
+  "initial_location": "workshop",
+  "seeker_away_room": "garage",
+  "final_location": "hallway closet",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the workshop, Nadia places the wrench set into the plastic tote.",
+      "actor": "Nadia",
+      "object": "wrench set",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Nadia walks off toward the garage.",
+      "actor": "Nadia",
+      "object": null,
+      "from_loc": "workshop",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the storage bin in the garage, moving the paint roller into the bookshelf cubby.",
+      "actor": null,
+      "object": "paint roller",
+      "from_loc": "garage",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the wrench set is taken out of the plastic tote in the workshop and placed in the backpack in the hallway closet.",
+      "actor": null,
+      "object": "wrench set",
+      "from_loc": "workshop",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "No word reaches Nadia, who is occupied in the garage.",
+      "actor": "Nadia",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "workshop",
+  "decoy_room": "garage",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.511227+00:00"
+}

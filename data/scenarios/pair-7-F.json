@@ -1,0 +1,92 @@
+{
+  "id": "pair-7-F",
+  "pair_id": "pair-7",
+  "condition": "F",
+  "tier": 1,
+  "seed": 7,
+  "seeker_name": "Elena",
+  "target_object": "compass",
+  "rooms": [
+    {
+      "name": "bedroom",
+      "containers": [
+        "top drawer",
+        "filing cabinet",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "toolbox"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "kitchen",
+    "bedroom",
+    "garage"
+  ],
+  "initial_location": "garage",
+  "seeker_away_room": "bedroom",
+  "final_location": "kitchen",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Elena tucks the compass away in the toolbox in the garage.",
+      "actor": "Elena",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Elena then heads to the bedroom.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": "garage",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "With Elena out of the room, the compass gets moved from the garage to the kitchen, into the cardboard box.",
+      "actor": null,
+      "object": "compass",
+      "from_loc": "garage",
+      "to_loc": "kitchen",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Elena remains in the bedroom, unaware anything has changed.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "garage",
+  "decoy_room": "bedroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.483642+00:00"
+}

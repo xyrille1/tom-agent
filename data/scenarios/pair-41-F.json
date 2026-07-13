@@ -1,0 +1,95 @@
+{
+  "id": "pair-41-F",
+  "pair_id": "pair-41",
+  "condition": "F",
+  "tier": 1,
+  "seed": 41,
+  "seeker_name": "Diego",
+  "target_object": "sewing kit",
+  "rooms": [
+    {
+      "name": "laundry room",
+      "containers": [
+        "bookshelf cubby",
+        "wooden chest",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "toolbox",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "storage bin"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "cardboard box",
+        "backpack",
+        "wicker basket"
+      ]
+    }
+  ],
+  "room_order": [
+    "laundry room",
+    "pantry",
+    "bedroom",
+    "home office"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "pantry",
+  "final_location": "pantry",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Diego sets the sewing kit down inside the bookshelf cubby, in the laundry room.",
+      "actor": "Diego",
+      "object": "sewing kit",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Diego then heads to the pantry.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the sewing kit is taken out of the bookshelf cubby in the laundry room and placed in the backpack in the pantry.",
+      "actor": null,
+      "object": "sewing kit",
+      "from_loc": "laundry room",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "No word reaches Diego, who is occupied in the pantry.",
+      "actor": "Diego",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "bedroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.569102+00:00"
+}

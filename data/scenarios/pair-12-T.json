@@ -1,0 +1,92 @@
+{
+  "id": "pair-12-T",
+  "pair_id": "pair-12",
+  "condition": "T",
+  "tier": 1,
+  "seed": 12,
+  "seeker_name": "Aisha",
+  "target_object": "coffee mug",
+  "rooms": [
+    {
+      "name": "attic",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "wooden chest",
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "bookshelf cubby",
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "laundry room",
+    "attic",
+    "basement",
+    "workshop"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "workshop",
+  "final_location": "attic",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha sets the coffee mug down inside the linen cupboard, in the laundry room.",
+      "actor": "Aisha",
+      "object": "coffee mug",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha then heads to the workshop.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the coffee mug is taken out of the linen cupboard in the laundry room and placed in the toolbox in the attic.",
+      "actor": null,
+      "object": "coffee mug",
+      "from_loc": "laundry room",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Someone finds Aisha in the workshop and mentions that the coffee mug is now in the toolbox in the attic.",
+      "actor": "Aisha",
+      "object": "coffee mug",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "attic",
+  "decoy_room": "workshop",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.496755+00:00"
+}

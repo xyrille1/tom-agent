@@ -1,0 +1,95 @@
+{
+  "id": "pair-42-F",
+  "pair_id": "pair-42",
+  "condition": "F",
+  "tier": 1,
+  "seed": 42,
+  "seeker_name": "Priya",
+  "target_object": "camera",
+  "rooms": [
+    {
+      "name": "kitchen",
+      "containers": [
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "top drawer",
+        "plastic tote",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "linen cupboard"
+      ]
+    }
+  ],
+  "room_order": [
+    "home office",
+    "kitchen",
+    "attic"
+  ],
+  "initial_location": "kitchen",
+  "seeker_away_room": "home office",
+  "final_location": "attic",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "While standing in the kitchen, Priya places the camera into the wicker basket.",
+      "actor": "Priya",
+      "object": "camera",
+      "from_loc": null,
+      "to_loc": "kitchen",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Priya then heads to the home office.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": "kitchen",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the rain jacket is shifted from the linen cupboard to the linen cupboard in the home office, unrelated to the camera's whereabouts.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "home office",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the camera is taken out of the wicker basket in the kitchen and placed in the shoe rack in the attic.",
+      "actor": null,
+      "object": "camera",
+      "from_loc": "kitchen",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Priya is still in the home office and hears nothing about it.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "kitchen",
+  "decoy_room": "home office",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.571807+00:00"
+}

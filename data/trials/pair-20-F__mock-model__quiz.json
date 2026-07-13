@@ -1,0 +1,16 @@
+{
+  "id": "pair-20-F__mock-model__quiz",
+  "scenario_id": "pair-20-F",
+  "pair_id": "pair-20",
+  "condition": "F",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Zara puts the spool of wire in the toolbox in the workshop.\n2. Zara steps out and goes to the garage.\n3. Separately, someone tidies the top drawer in the garage, moving the hand mirror into the bookshelf cubby.\n4. While Zara is away, someone moves the spool of wire from the toolbox in the workshop to the wicker basket in the attic.\n5. Nobody tells Zara, who stays in the garage the whole time.\n\nQuestion: Where will Zara look for the spool of wire FIRST?\n\nA) garage\nB) attic\nC) workshop\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "attic",
+  "is_correct": false,
+  "failure_tag": "used_true_state_instead_of_belief",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.567489+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "pair-28-F",
+  "pair_id": "pair-28",
+  "condition": "F",
+  "tier": 1,
+  "seed": 28,
+  "seeker_name": "Rafael",
+  "target_object": "spare charger",
+  "rooms": [
+    {
+      "name": "mudroom",
+      "containers": [
+        "bookshelf cubby",
+        "wicker basket",
+        "storage bin"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "toolbox",
+        "storage bin"
+      ]
+    }
+  ],
+  "room_order": [
+    "bedroom",
+    "basement",
+    "mudroom"
+  ],
+  "initial_location": "mudroom",
+  "seeker_away_room": "basement",
+  "final_location": "bedroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Rafael tucks the spare charger away in the bookshelf cubby in the mudroom.",
+      "actor": "Rafael",
+      "object": "spare charger",
+      "from_loc": null,
+      "to_loc": "mudroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Rafael leaves for the basement.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "mudroom",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the toolbox in the basement, moving the puzzle box into the storage bin.",
+      "actor": null,
+      "object": "puzzle box",
+      "from_loc": "basement",
+      "to_loc": "basement",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "In Rafael's absence, the spare charger is relocated from the mudroom's bookshelf cubby to the bedroom's plastic tote.",
+      "actor": null,
+      "object": "spare charger",
+      "from_loc": "mudroom",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Nobody tells Rafael, who stays in the basement the whole time.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "basement",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "mudroom",
+  "decoy_room": "basement",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.538504+00:00"
+}

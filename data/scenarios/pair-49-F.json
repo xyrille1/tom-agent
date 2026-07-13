@@ -1,0 +1,94 @@
+{
+  "id": "pair-49-F",
+  "pair_id": "pair-49",
+  "condition": "F",
+  "tier": 1,
+  "seed": 49,
+  "seeker_name": "Oskar",
+  "target_object": "portable speaker",
+  "rooms": [
+    {
+      "name": "laundry room",
+      "containers": [
+        "shoe rack",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "bookshelf cubby"
+      ]
+    }
+  ],
+  "room_order": [
+    "garage",
+    "laundry room",
+    "pantry"
+  ],
+  "initial_location": "laundry room",
+  "seeker_away_room": "garage",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Oskar sets the portable speaker down inside the bookshelf cubby, in the laundry room.",
+      "actor": "Oskar",
+      "object": "portable speaker",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Oskar then heads to the garage.",
+      "actor": "Oskar",
+      "object": null,
+      "from_loc": "laundry room",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the letter opener is shifted from the plastic tote to the plastic tote in the pantry, unrelated to the portable speaker's whereabouts.",
+      "actor": null,
+      "object": "letter opener",
+      "from_loc": "pantry",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the portable speaker is taken out of the bookshelf cubby in the laundry room and placed in the bookshelf cubby in the garage.",
+      "actor": null,
+      "object": "portable speaker",
+      "from_loc": "laundry room",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Oskar is still in the garage and hears nothing about it.",
+      "actor": "Oskar",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "pantry",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.589914+00:00"
+}

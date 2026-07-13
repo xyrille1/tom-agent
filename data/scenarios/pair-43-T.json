@@ -1,0 +1,97 @@
+{
+  "id": "pair-43-T",
+  "pair_id": "pair-43",
+  "condition": "T",
+  "tier": 1,
+  "seed": 43,
+  "seeker_name": "Aisha",
+  "target_object": "compass",
+  "rooms": [
+    {
+      "name": "attic",
+      "containers": [
+        "plastic tote",
+        "top drawer"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "linen cupboard",
+        "backpack"
+      ]
+    },
+    {
+      "name": "hallway closet",
+      "containers": [
+        "cardboard box",
+        "shoe rack",
+        "toolbox"
+      ]
+    }
+  ],
+  "room_order": [
+    "attic",
+    "bedroom",
+    "hallway closet"
+  ],
+  "initial_location": "bedroom",
+  "seeker_away_room": "hallway closet",
+  "final_location": "attic",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha puts the compass in the linen cupboard in the bedroom.",
+      "actor": "Aisha",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha walks off toward the hallway closet.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "bedroom",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the travel mug is shifted from the cardboard box to the shoe rack in the hallway closet, unrelated to the compass's whereabouts.",
+      "actor": null,
+      "object": "travel mug",
+      "from_loc": "hallway closet",
+      "to_loc": "hallway closet",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "With Aisha out of the room, the compass gets moved from the bedroom to the attic, into the plastic tote.",
+      "actor": null,
+      "object": "compass",
+      "from_loc": "bedroom",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Aisha in the hallway closet and mentions that the compass is now in the plastic tote in the attic.",
+      "actor": "Aisha",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "attic",
+  "decoy_room": "hallway closet",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.574806+00:00"
+}

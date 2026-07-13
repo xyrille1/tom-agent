@@ -1,0 +1,94 @@
+{
+  "id": "pair-48-F",
+  "pair_id": "pair-48",
+  "condition": "F",
+  "tier": 1,
+  "seed": 48,
+  "seeker_name": "Priya",
+  "target_object": "board game",
+  "rooms": [
+    {
+      "name": "bedroom",
+      "containers": [
+        "storage bin",
+        "toolbox",
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "storage bin",
+        "bookshelf cubby",
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "workshop",
+    "bedroom",
+    "attic",
+    "basement"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "bedroom",
+  "final_location": "bedroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Priya puts the board game in the bookshelf cubby in the attic.",
+      "actor": "Priya",
+      "object": "board game",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Priya leaves for the bedroom.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the board game is taken out of the bookshelf cubby in the attic and placed in the wicker basket in the bedroom.",
+      "actor": null,
+      "object": "board game",
+      "from_loc": "attic",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Priya is still in the bedroom and hears nothing about it.",
+      "actor": "Priya",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "attic",
+  "decoy_room": "basement",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.587730+00:00"
+}

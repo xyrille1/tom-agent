@@ -1,0 +1,105 @@
+{
+  "id": "pair-13-T",
+  "pair_id": "pair-13",
+  "condition": "T",
+  "tier": 1,
+  "seed": 13,
+  "seeker_name": "Elena",
+  "target_object": "packet of seeds",
+  "rooms": [
+    {
+      "name": "attic",
+      "containers": [
+        "wicker basket",
+        "storage bin",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "top drawer"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "storage bin",
+        "wooden chest",
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "wicker basket",
+        "plastic tote"
+      ]
+    }
+  ],
+  "room_order": [
+    "bedroom",
+    "home office",
+    "workshop",
+    "attic"
+  ],
+  "initial_location": "bedroom",
+  "seeker_away_room": "workshop",
+  "final_location": "home office",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Elena sets the packet of seeds down inside the wooden chest, in the bedroom.",
+      "actor": "Elena",
+      "object": "packet of seeds",
+      "from_loc": null,
+      "to_loc": "bedroom",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Elena steps out and goes to the workshop.",
+      "actor": "Elena",
+      "object": null,
+      "from_loc": "bedroom",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the magnifying glass is shifted from the top drawer to the top drawer in the workshop, unrelated to the packet of seeds's whereabouts.",
+      "actor": null,
+      "object": "magnifying glass",
+      "from_loc": "workshop",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "In Elena's absence, the packet of seeds is relocated from the bedroom's wooden chest to the home office's wicker basket.",
+      "actor": null,
+      "object": "packet of seeds",
+      "from_loc": "bedroom",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "told",
+      "text": "Someone finds Elena in the workshop and mentions that the packet of seeds is now in the wicker basket in the home office.",
+      "actor": "Elena",
+      "object": "packet of seeds",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "home office",
+  "decoy_room": "workshop",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.499499+00:00"
+}

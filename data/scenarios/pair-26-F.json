@@ -1,0 +1,88 @@
+{
+  "id": "pair-26-F",
+  "pair_id": "pair-26",
+  "condition": "F",
+  "tier": 1,
+  "seed": 26,
+  "seeker_name": "Amara",
+  "target_object": "packet of seeds",
+  "rooms": [
+    {
+      "name": "workshop",
+      "containers": [
+        "shoe rack",
+        "cardboard box",
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "cardboard box",
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "shoe rack",
+        "wicker basket",
+        "toolbox"
+      ]
+    }
+  ],
+  "room_order": [
+    "pantry",
+    "home office",
+    "workshop"
+  ],
+  "initial_location": "pantry",
+  "seeker_away_room": "workshop",
+  "final_location": "workshop",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Amara tucks the packet of seeds away in the shoe rack in the pantry.",
+      "actor": "Amara",
+      "object": "packet of seeds",
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Amara leaves for the workshop.",
+      "actor": "Amara",
+      "object": null,
+      "from_loc": "pantry",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "With Amara out of the room, the packet of seeds gets moved from the pantry to the workshop, into the shoe rack.",
+      "actor": null,
+      "object": "packet of seeds",
+      "from_loc": "pantry",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "filler",
+      "text": "Amara remains in the workshop, unaware anything has changed.",
+      "actor": "Amara",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "pantry",
+  "decoy_room": "home office",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.531991+00:00"
+}

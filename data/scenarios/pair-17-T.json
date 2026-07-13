@@ -1,0 +1,94 @@
+{
+  "id": "pair-17-T",
+  "pair_id": "pair-17",
+  "condition": "T",
+  "tier": 1,
+  "seed": 17,
+  "seeker_name": "Wren",
+  "target_object": "compass",
+  "rooms": [
+    {
+      "name": "attic",
+      "containers": [
+        "bookshelf cubby",
+        "shoe rack",
+        "wooden chest"
+      ]
+    },
+    {
+      "name": "laundry room",
+      "containers": [
+        "cardboard box"
+      ]
+    },
+    {
+      "name": "mudroom",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "bedroom",
+      "containers": [
+        "toolbox",
+        "wooden chest",
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "attic",
+    "laundry room",
+    "bedroom",
+    "mudroom"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "bedroom",
+  "final_location": "laundry room",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Wren puts the compass in the bookshelf cubby in the attic.",
+      "actor": "Wren",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Wren leaves for the bedroom.",
+      "actor": "Wren",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "bedroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Wren's absence, the compass is relocated from the attic's bookshelf cubby to the laundry room's cardboard box.",
+      "actor": null,
+      "object": "compass",
+      "from_loc": "attic",
+      "to_loc": "laundry room",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Before returning, Wren learns that the compass was moved to the cardboard box in the laundry room.",
+      "actor": "Wren",
+      "object": "compass",
+      "from_loc": null,
+      "to_loc": "laundry room",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "laundry room",
+  "decoy_room": "bedroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.509221+00:00"
+}

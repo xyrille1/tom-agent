@@ -1,0 +1,16 @@
+{
+  "id": "pair-6-T__mock-model__quiz",
+  "scenario_id": "pair-6-T",
+  "pair_id": "pair-6",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Ines puts the set of dice in the wooden chest in the kitchen.\n2. A moment later, Ines leaves for the hallway closet.\n3. Separately, someone tidies the backpack in the attic, moving the rain jacket into the filing cabinet.\n4. With Ines out of the room, the set of dice gets moved from the kitchen to the hallway closet, into the wicker basket.\n5. Someone finds Ines in the hallway closet and mentions that the set of dice is now in the wicker basket in the hallway closet.\n\nQuestion: Where will Ines look for the set of dice FIRST?\n\nA) hallway closet\nB) kitchen\nC) attic\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"B\"}",
+  "parsed_answer": "kitchen",
+  "is_correct": false,
+  "failure_tag": "wrong_belief_location",
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.703977+00:00"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "pair-20-F",
+  "pair_id": "pair-20",
+  "condition": "F",
+  "tier": 1,
+  "seed": 20,
+  "seeker_name": "Zara",
+  "target_object": "spool of wire",
+  "rooms": [
+    {
+      "name": "attic",
+      "containers": [
+        "linen cupboard",
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "workshop",
+      "containers": [
+        "toolbox"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "top drawer",
+        "bookshelf cubby"
+      ]
+    }
+  ],
+  "room_order": [
+    "garage",
+    "workshop",
+    "attic"
+  ],
+  "initial_location": "workshop",
+  "seeker_away_room": "garage",
+  "final_location": "attic",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Zara puts the spool of wire in the toolbox in the workshop.",
+      "actor": "Zara",
+      "object": "spool of wire",
+      "from_loc": null,
+      "to_loc": "workshop",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Zara steps out and goes to the garage.",
+      "actor": "Zara",
+      "object": null,
+      "from_loc": "workshop",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "Separately, someone tidies the top drawer in the garage, moving the hand mirror into the bookshelf cubby.",
+      "actor": null,
+      "object": "hand mirror",
+      "from_loc": "garage",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "While Zara is away, someone moves the spool of wire from the toolbox in the workshop to the wicker basket in the attic.",
+      "actor": null,
+      "object": "spool of wire",
+      "from_loc": "workshop",
+      "to_loc": "attic",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Nobody tells Zara, who stays in the garage the whole time.",
+      "actor": "Zara",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "workshop",
+  "decoy_room": "garage",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.516744+00:00"
+}

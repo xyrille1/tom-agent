@@ -1,0 +1,16 @@
+{
+  "id": "pair-7-T__mock-model__quiz",
+  "scenario_id": "pair-7-T",
+  "pair_id": "pair-7",
+  "condition": "T",
+  "model_name": "mock-model",
+  "task_type": "quiz",
+  "prompt": "You will be given a complete, chronological event log -- including things one character did not personally witness. Answer the question about what that character believes, using only the required JSON format.\n\nEvent log:\n1. Elena tucks the compass away in the toolbox in the garage.\n2. Elena then heads to the bedroom.\n3. With Elena out of the room, the compass gets moved from the garage to the kitchen, into the cardboard box.\n4. Elena is told, while still in the bedroom, that the compass has been moved to the cardboard box in the kitchen.\n\nQuestion: Where will Elena look for the compass FIRST?\n\nA) kitchen\nB) bedroom\nC) garage\n\nRespond with ONLY a JSON object of the form {\"answer\": \"<letter>\"}. No other text, no explanation.",
+  "raw_response": "{\"answer\": \"A\"}",
+  "parsed_answer": "kitchen",
+  "is_correct": true,
+  "failure_tag": null,
+  "latency_ms": 0.0,
+  "error": null,
+  "created_at": "2026-07-13T17:49:34.708486+00:00"
+}

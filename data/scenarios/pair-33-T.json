@@ -1,0 +1,88 @@
+{
+  "id": "pair-33-T",
+  "pair_id": "pair-33",
+  "condition": "T",
+  "tier": 1,
+  "seed": 33,
+  "seeker_name": "Ibrahim",
+  "target_object": "clipboard",
+  "rooms": [
+    {
+      "name": "workshop",
+      "containers": [
+        "plastic tote",
+        "shoe rack"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "wicker basket",
+        "plastic tote",
+        "linen cupboard"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "filing cabinet",
+        "plastic tote",
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "workshop",
+    "attic",
+    "home office"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "workshop",
+  "final_location": "home office",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Ibrahim tucks the clipboard away in the plastic tote in the attic.",
+      "actor": "Ibrahim",
+      "object": "clipboard",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "A moment later, Ibrahim leaves for the workshop.",
+      "actor": "Ibrahim",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "workshop",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "Meanwhile, the clipboard is taken out of the plastic tote in the attic and placed in the plastic tote in the home office.",
+      "actor": null,
+      "object": "clipboard",
+      "from_loc": "attic",
+      "to_loc": "home office",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Someone finds Ibrahim in the workshop and mentions that the clipboard is now in the plastic tote in the home office.",
+      "actor": "Ibrahim",
+      "object": "clipboard",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "home office",
+  "decoy_room": "workshop",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.550794+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "pair-40-T",
+  "pair_id": "pair-40",
+  "condition": "T",
+  "tier": 1,
+  "seed": 40,
+  "seeker_name": "Aisha",
+  "target_object": "rain jacket",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "plastic tote",
+        "bookshelf cubby"
+      ]
+    },
+    {
+      "name": "basement",
+      "containers": [
+        "storage bin",
+        "wicker basket",
+        "filing cabinet"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "containers": [
+        "bookshelf cubby",
+        "backpack"
+      ]
+    },
+    {
+      "name": "home office",
+      "containers": [
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "home office",
+    "kitchen",
+    "sunroom",
+    "basement"
+  ],
+  "initial_location": "home office",
+  "seeker_away_room": "sunroom",
+  "final_location": "sunroom",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Aisha sets the rain jacket down inside the shoe rack, in the home office.",
+      "actor": "Aisha",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "home office",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Aisha then heads to the sunroom.",
+      "actor": "Aisha",
+      "object": null,
+      "from_loc": "home office",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "In Aisha's absence, the rain jacket is relocated from the home office's shoe rack to the sunroom's plastic tote.",
+      "actor": null,
+      "object": "rain jacket",
+      "from_loc": "home office",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "A message reaches Aisha in the sunroom: the rain jacket is now in the sunroom, inside the plastic tote.",
+      "actor": "Aisha",
+      "object": "rain jacket",
+      "from_loc": null,
+      "to_loc": "sunroom",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "sunroom",
+  "decoy_room": "kitchen",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.566925+00:00"
+}

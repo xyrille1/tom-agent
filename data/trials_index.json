@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "pair-0-F__mock-model__interactive",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-0-F__mock-model__quiz",
+    "scenario_id": "pair-0-F",
+    "pair_id": "pair-0",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-0-T__mock-model__interactive",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-0-T__mock-model__quiz",
+    "scenario_id": "pair-0-T",
+    "pair_id": "pair-0",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-1-F__mock-model__interactive",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-1-F__mock-model__quiz",
+    "scenario_id": "pair-1-F",
+    "pair_id": "pair-1",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-1-T__mock-model__interactive",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-1-T__mock-model__quiz",
+    "scenario_id": "pair-1-T",
+    "pair_id": "pair-1",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-10-F__mock-model__interactive",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-10-F__mock-model__quiz",
+    "scenario_id": "pair-10-F",
+    "pair_id": "pair-10",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-10-T__mock-model__interactive",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-10-T__mock-model__quiz",
+    "scenario_id": "pair-10-T",
+    "pair_id": "pair-10",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-11-F__mock-model__interactive",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-11-F__mock-model__quiz",
+    "scenario_id": "pair-11-F",
+    "pair_id": "pair-11",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-11-T__mock-model__interactive",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-11-T__mock-model__quiz",
+    "scenario_id": "pair-11-T",
+    "pair_id": "pair-11",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-12-F__mock-model__interactive",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-12-F__mock-model__quiz",
+    "scenario_id": "pair-12-F",
+    "pair_id": "pair-12",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-12-T__mock-model__interactive",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-12-T__mock-model__quiz",
+    "scenario_id": "pair-12-T",
+    "pair_id": "pair-12",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-13-F__mock-model__interactive",
+    "scenario_id": "pair-13-F",
+    "pair_id": "pair-13",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-13-F__mock-model__quiz",
+    "scenario_id": "pair-13-F",
+    "pair_id": "pair-13",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-13-T__mock-model__interactive",
+    "scenario_id": "pair-13-T",
+    "pair_id": "pair-13",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-13-T__mock-model__quiz",
+    "scenario_id": "pair-13-T",
+    "pair_id": "pair-13",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-14-F__mock-model__interactive",
+    "scenario_id": "pair-14-F",
+    "pair_id": "pair-14",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-14-F__mock-model__quiz",
+    "scenario_id": "pair-14-F",
+    "pair_id": "pair-14",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-14-T__mock-model__interactive",
+    "scenario_id": "pair-14-T",
+    "pair_id": "pair-14",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-14-T__mock-model__quiz",
+    "scenario_id": "pair-14-T",
+    "pair_id": "pair-14",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-15-F__mock-model__interactive",
+    "scenario_id": "pair-15-F",
+    "pair_id": "pair-15",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-15-F__mock-model__quiz",
+    "scenario_id": "pair-15-F",
+    "pair_id": "pair-15",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-15-T__mock-model__interactive",
+    "scenario_id": "pair-15-T",
+    "pair_id": "pair-15",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-15-T__mock-model__quiz",
+    "scenario_id": "pair-15-T",
+    "pair_id": "pair-15",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-16-F__mock-model__interactive",
+    "scenario_id": "pair-16-F",
+    "pair_id": "pair-16",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-16-F__mock-model__quiz",
+    "scenario_id": "pair-16-F",
+    "pair_id": "pair-16",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-16-T__mock-model__interactive",
+    "scenario_id": "pair-16-T",
+    "pair_id": "pair-16",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-16-T__mock-model__quiz",
+    "scenario_id": "pair-16-T",
+    "pair_id": "pair-16",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-17-F__mock-model__interactive",
+    "scenario_id": "pair-17-F",
+    "pair_id": "pair-17",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-17-F__mock-model__quiz",
+    "scenario_id": "pair-17-F",
+    "pair_id": "pair-17",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-17-T__mock-model__interactive",
+    "scenario_id": "pair-17-T",
+    "pair_id": "pair-17",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-17-T__mock-model__quiz",
+    "scenario_id": "pair-17-T",
+    "pair_id": "pair-17",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-18-F__mock-model__interactive",
+    "scenario_id": "pair-18-F",
+    "pair_id": "pair-18",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-18-F__mock-model__quiz",
+    "scenario_id": "pair-18-F",
+    "pair_id": "pair-18",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-18-T__mock-model__interactive",
+    "scenario_id": "pair-18-T",
+    "pair_id": "pair-18",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-18-T__mock-model__quiz",
+    "scenario_id": "pair-18-T",
+    "pair_id": "pair-18",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-19-F__mock-model__interactive",
+    "scenario_id": "pair-19-F",
+    "pair_id": "pair-19",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-19-F__mock-model__quiz",
+    "scenario_id": "pair-19-F",
+    "pair_id": "pair-19",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-19-T__mock-model__interactive",
+    "scenario_id": "pair-19-T",
+    "pair_id": "pair-19",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-19-T__mock-model__quiz",
+    "scenario_id": "pair-19-T",
+    "pair_id": "pair-19",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-2-F__mock-model__interactive",
+    "scenario_id": "pair-2-F",
+    "pair_id": "pair-2",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-2-F__mock-model__quiz",
+    "scenario_id": "pair-2-F",
+    "pair_id": "pair-2",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-2-T__mock-model__interactive",
+    "scenario_id": "pair-2-T",
+    "pair_id": "pair-2",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-2-T__mock-model__quiz",
+    "scenario_id": "pair-2-T",
+    "pair_id": "pair-2",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-20-F__mock-model__interactive",
+    "scenario_id": "pair-20-F",
+    "pair_id": "pair-20",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-20-F__mock-model__quiz",
+    "scenario_id": "pair-20-F",
+    "pair_id": "pair-20",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-20-T__mock-model__interactive",
+    "scenario_id": "pair-20-T",
+    "pair_id": "pair-20",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-20-T__mock-model__quiz",
+    "scenario_id": "pair-20-T",
+    "pair_id": "pair-20",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-21-F__mock-model__interactive",
+    "scenario_id": "pair-21-F",
+    "pair_id": "pair-21",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-21-F__mock-model__quiz",
+    "scenario_id": "pair-21-F",
+    "pair_id": "pair-21",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-21-T__mock-model__interactive",
+    "scenario_id": "pair-21-T",
+    "pair_id": "pair-21",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-21-T__mock-model__quiz",
+    "scenario_id": "pair-21-T",
+    "pair_id": "pair-21",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-22-F__mock-model__interactive",
+    "scenario_id": "pair-22-F",
+    "pair_id": "pair-22",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-22-F__mock-model__quiz",
+    "scenario_id": "pair-22-F",
+    "pair_id": "pair-22",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-22-T__mock-model__interactive",
+    "scenario_id": "pair-22-T",
+    "pair_id": "pair-22",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-22-T__mock-model__quiz",
+    "scenario_id": "pair-22-T",
+    "pair_id": "pair-22",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-23-F__mock-model__interactive",
+    "scenario_id": "pair-23-F",
+    "pair_id": "pair-23",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-23-F__mock-model__quiz",
+    "scenario_id": "pair-23-F",
+    "pair_id": "pair-23",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-23-T__mock-model__interactive",
+    "scenario_id": "pair-23-T",
+    "pair_id": "pair-23",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-23-T__mock-model__quiz",
+    "scenario_id": "pair-23-T",
+    "pair_id": "pair-23",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-24-F__mock-model__interactive",
+    "scenario_id": "pair-24-F",
+    "pair_id": "pair-24",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-24-F__mock-model__quiz",
+    "scenario_id": "pair-24-F",
+    "pair_id": "pair-24",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-24-T__mock-model__interactive",
+    "scenario_id": "pair-24-T",
+    "pair_id": "pair-24",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-24-T__mock-model__quiz",
+    "scenario_id": "pair-24-T",
+    "pair_id": "pair-24",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-25-F__mock-model__interactive",
+    "scenario_id": "pair-25-F",
+    "pair_id": "pair-25",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-25-F__mock-model__quiz",
+    "scenario_id": "pair-25-F",
+    "pair_id": "pair-25",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-25-T__mock-model__interactive",
+    "scenario_id": "pair-25-T",
+    "pair_id": "pair-25",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-25-T__mock-model__quiz",
+    "scenario_id": "pair-25-T",
+    "pair_id": "pair-25",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-26-F__mock-model__interactive",
+    "scenario_id": "pair-26-F",
+    "pair_id": "pair-26",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-26-F__mock-model__quiz",
+    "scenario_id": "pair-26-F",
+    "pair_id": "pair-26",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-26-T__mock-model__interactive",
+    "scenario_id": "pair-26-T",
+    "pair_id": "pair-26",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-26-T__mock-model__quiz",
+    "scenario_id": "pair-26-T",
+    "pair_id": "pair-26",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-27-F__mock-model__interactive",
+    "scenario_id": "pair-27-F",
+    "pair_id": "pair-27",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-27-F__mock-model__quiz",
+    "scenario_id": "pair-27-F",
+    "pair_id": "pair-27",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-27-T__mock-model__interactive",
+    "scenario_id": "pair-27-T",
+    "pair_id": "pair-27",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-27-T__mock-model__quiz",
+    "scenario_id": "pair-27-T",
+    "pair_id": "pair-27",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-28-F__mock-model__interactive",
+    "scenario_id": "pair-28-F",
+    "pair_id": "pair-28",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-28-F__mock-model__quiz",
+    "scenario_id": "pair-28-F",
+    "pair_id": "pair-28",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-28-T__mock-model__interactive",
+    "scenario_id": "pair-28-T",
+    "pair_id": "pair-28",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-28-T__mock-model__quiz",
+    "scenario_id": "pair-28-T",
+    "pair_id": "pair-28",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-29-F__mock-model__interactive",
+    "scenario_id": "pair-29-F",
+    "pair_id": "pair-29",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-29-F__mock-model__quiz",
+    "scenario_id": "pair-29-F",
+    "pair_id": "pair-29",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-29-T__mock-model__interactive",
+    "scenario_id": "pair-29-T",
+    "pair_id": "pair-29",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-29-T__mock-model__quiz",
+    "scenario_id": "pair-29-T",
+    "pair_id": "pair-29",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-3-F__mock-model__interactive",
+    "scenario_id": "pair-3-F",
+    "pair_id": "pair-3",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-3-F__mock-model__quiz",
+    "scenario_id": "pair-3-F",
+    "pair_id": "pair-3",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-3-T__mock-model__interactive",
+    "scenario_id": "pair-3-T",
+    "pair_id": "pair-3",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-3-T__mock-model__quiz",
+    "scenario_id": "pair-3-T",
+    "pair_id": "pair-3",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-30-F__mock-model__interactive",
+    "scenario_id": "pair-30-F",
+    "pair_id": "pair-30",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-30-F__mock-model__quiz",
+    "scenario_id": "pair-30-F",
+    "pair_id": "pair-30",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-30-T__mock-model__interactive",
+    "scenario_id": "pair-30-T",
+    "pair_id": "pair-30",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-30-T__mock-model__quiz",
+    "scenario_id": "pair-30-T",
+    "pair_id": "pair-30",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-31-F__mock-model__interactive",
+    "scenario_id": "pair-31-F",
+    "pair_id": "pair-31",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-31-F__mock-model__quiz",
+    "scenario_id": "pair-31-F",
+    "pair_id": "pair-31",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-31-T__mock-model__interactive",
+    "scenario_id": "pair-31-T",
+    "pair_id": "pair-31",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-31-T__mock-model__quiz",
+    "scenario_id": "pair-31-T",
+    "pair_id": "pair-31",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-32-F__mock-model__interactive",
+    "scenario_id": "pair-32-F",
+    "pair_id": "pair-32",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-32-F__mock-model__quiz",
+    "scenario_id": "pair-32-F",
+    "pair_id": "pair-32",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-32-T__mock-model__interactive",
+    "scenario_id": "pair-32-T",
+    "pair_id": "pair-32",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-32-T__mock-model__quiz",
+    "scenario_id": "pair-32-T",
+    "pair_id": "pair-32",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-33-F__mock-model__interactive",
+    "scenario_id": "pair-33-F",
+    "pair_id": "pair-33",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-33-F__mock-model__quiz",
+    "scenario_id": "pair-33-F",
+    "pair_id": "pair-33",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-33-T__mock-model__interactive",
+    "scenario_id": "pair-33-T",
+    "pair_id": "pair-33",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-33-T__mock-model__quiz",
+    "scenario_id": "pair-33-T",
+    "pair_id": "pair-33",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-34-F__mock-model__interactive",
+    "scenario_id": "pair-34-F",
+    "pair_id": "pair-34",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-34-F__mock-model__quiz",
+    "scenario_id": "pair-34-F",
+    "pair_id": "pair-34",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-34-T__mock-model__interactive",
+    "scenario_id": "pair-34-T",
+    "pair_id": "pair-34",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-34-T__mock-model__quiz",
+    "scenario_id": "pair-34-T",
+    "pair_id": "pair-34",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-35-F__mock-model__interactive",
+    "scenario_id": "pair-35-F",
+    "pair_id": "pair-35",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-35-F__mock-model__quiz",
+    "scenario_id": "pair-35-F",
+    "pair_id": "pair-35",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-35-T__mock-model__interactive",
+    "scenario_id": "pair-35-T",
+    "pair_id": "pair-35",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-35-T__mock-model__quiz",
+    "scenario_id": "pair-35-T",
+    "pair_id": "pair-35",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-36-F__mock-model__interactive",
+    "scenario_id": "pair-36-F",
+    "pair_id": "pair-36",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-36-F__mock-model__quiz",
+    "scenario_id": "pair-36-F",
+    "pair_id": "pair-36",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-36-T__mock-model__interactive",
+    "scenario_id": "pair-36-T",
+    "pair_id": "pair-36",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-36-T__mock-model__quiz",
+    "scenario_id": "pair-36-T",
+    "pair_id": "pair-36",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-37-F__mock-model__interactive",
+    "scenario_id": "pair-37-F",
+    "pair_id": "pair-37",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-37-F__mock-model__quiz",
+    "scenario_id": "pair-37-F",
+    "pair_id": "pair-37",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-37-T__mock-model__interactive",
+    "scenario_id": "pair-37-T",
+    "pair_id": "pair-37",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-37-T__mock-model__quiz",
+    "scenario_id": "pair-37-T",
+    "pair_id": "pair-37",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-38-F__mock-model__interactive",
+    "scenario_id": "pair-38-F",
+    "pair_id": "pair-38",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-38-F__mock-model__quiz",
+    "scenario_id": "pair-38-F",
+    "pair_id": "pair-38",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-38-T__mock-model__interactive",
+    "scenario_id": "pair-38-T",
+    "pair_id": "pair-38",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-38-T__mock-model__quiz",
+    "scenario_id": "pair-38-T",
+    "pair_id": "pair-38",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-39-F__mock-model__interactive",
+    "scenario_id": "pair-39-F",
+    "pair_id": "pair-39",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-39-F__mock-model__quiz",
+    "scenario_id": "pair-39-F",
+    "pair_id": "pair-39",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-39-T__mock-model__interactive",
+    "scenario_id": "pair-39-T",
+    "pair_id": "pair-39",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-39-T__mock-model__quiz",
+    "scenario_id": "pair-39-T",
+    "pair_id": "pair-39",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-4-F__mock-model__interactive",
+    "scenario_id": "pair-4-F",
+    "pair_id": "pair-4",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-4-F__mock-model__quiz",
+    "scenario_id": "pair-4-F",
+    "pair_id": "pair-4",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-4-T__mock-model__interactive",
+    "scenario_id": "pair-4-T",
+    "pair_id": "pair-4",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-4-T__mock-model__quiz",
+    "scenario_id": "pair-4-T",
+    "pair_id": "pair-4",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-40-F__mock-model__interactive",
+    "scenario_id": "pair-40-F",
+    "pair_id": "pair-40",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-40-F__mock-model__quiz",
+    "scenario_id": "pair-40-F",
+    "pair_id": "pair-40",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-40-T__mock-model__interactive",
+    "scenario_id": "pair-40-T",
+    "pair_id": "pair-40",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-40-T__mock-model__quiz",
+    "scenario_id": "pair-40-T",
+    "pair_id": "pair-40",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-41-F__mock-model__interactive",
+    "scenario_id": "pair-41-F",
+    "pair_id": "pair-41",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-41-F__mock-model__quiz",
+    "scenario_id": "pair-41-F",
+    "pair_id": "pair-41",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-41-T__mock-model__interactive",
+    "scenario_id": "pair-41-T",
+    "pair_id": "pair-41",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-41-T__mock-model__quiz",
+    "scenario_id": "pair-41-T",
+    "pair_id": "pair-41",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-42-F__mock-model__interactive",
+    "scenario_id": "pair-42-F",
+    "pair_id": "pair-42",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-42-F__mock-model__quiz",
+    "scenario_id": "pair-42-F",
+    "pair_id": "pair-42",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-42-T__mock-model__interactive",
+    "scenario_id": "pair-42-T",
+    "pair_id": "pair-42",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-42-T__mock-model__quiz",
+    "scenario_id": "pair-42-T",
+    "pair_id": "pair-42",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-43-F__mock-model__interactive",
+    "scenario_id": "pair-43-F",
+    "pair_id": "pair-43",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-43-F__mock-model__quiz",
+    "scenario_id": "pair-43-F",
+    "pair_id": "pair-43",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-43-T__mock-model__interactive",
+    "scenario_id": "pair-43-T",
+    "pair_id": "pair-43",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-43-T__mock-model__quiz",
+    "scenario_id": "pair-43-T",
+    "pair_id": "pair-43",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-44-F__mock-model__interactive",
+    "scenario_id": "pair-44-F",
+    "pair_id": "pair-44",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-44-F__mock-model__quiz",
+    "scenario_id": "pair-44-F",
+    "pair_id": "pair-44",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-44-T__mock-model__interactive",
+    "scenario_id": "pair-44-T",
+    "pair_id": "pair-44",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-44-T__mock-model__quiz",
+    "scenario_id": "pair-44-T",
+    "pair_id": "pair-44",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-45-F__mock-model__interactive",
+    "scenario_id": "pair-45-F",
+    "pair_id": "pair-45",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-45-F__mock-model__quiz",
+    "scenario_id": "pair-45-F",
+    "pair_id": "pair-45",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-45-T__mock-model__interactive",
+    "scenario_id": "pair-45-T",
+    "pair_id": "pair-45",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-45-T__mock-model__quiz",
+    "scenario_id": "pair-45-T",
+    "pair_id": "pair-45",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-46-F__mock-model__interactive",
+    "scenario_id": "pair-46-F",
+    "pair_id": "pair-46",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-46-F__mock-model__quiz",
+    "scenario_id": "pair-46-F",
+    "pair_id": "pair-46",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-46-T__mock-model__interactive",
+    "scenario_id": "pair-46-T",
+    "pair_id": "pair-46",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-46-T__mock-model__quiz",
+    "scenario_id": "pair-46-T",
+    "pair_id": "pair-46",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-47-F__mock-model__interactive",
+    "scenario_id": "pair-47-F",
+    "pair_id": "pair-47",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-47-F__mock-model__quiz",
+    "scenario_id": "pair-47-F",
+    "pair_id": "pair-47",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-47-T__mock-model__interactive",
+    "scenario_id": "pair-47-T",
+    "pair_id": "pair-47",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-47-T__mock-model__quiz",
+    "scenario_id": "pair-47-T",
+    "pair_id": "pair-47",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-48-F__mock-model__interactive",
+    "scenario_id": "pair-48-F",
+    "pair_id": "pair-48",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-48-F__mock-model__quiz",
+    "scenario_id": "pair-48-F",
+    "pair_id": "pair-48",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-48-T__mock-model__interactive",
+    "scenario_id": "pair-48-T",
+    "pair_id": "pair-48",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-48-T__mock-model__quiz",
+    "scenario_id": "pair-48-T",
+    "pair_id": "pair-48",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-49-F__mock-model__interactive",
+    "scenario_id": "pair-49-F",
+    "pair_id": "pair-49",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-49-F__mock-model__quiz",
+    "scenario_id": "pair-49-F",
+    "pair_id": "pair-49",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-49-T__mock-model__interactive",
+    "scenario_id": "pair-49-T",
+    "pair_id": "pair-49",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-49-T__mock-model__quiz",
+    "scenario_id": "pair-49-T",
+    "pair_id": "pair-49",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-5-F__mock-model__interactive",
+    "scenario_id": "pair-5-F",
+    "pair_id": "pair-5",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-5-F__mock-model__quiz",
+    "scenario_id": "pair-5-F",
+    "pair_id": "pair-5",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-5-T__mock-model__interactive",
+    "scenario_id": "pair-5-T",
+    "pair_id": "pair-5",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-5-T__mock-model__quiz",
+    "scenario_id": "pair-5-T",
+    "pair_id": "pair-5",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-6-F__mock-model__interactive",
+    "scenario_id": "pair-6-F",
+    "pair_id": "pair-6",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "used_true_state_instead_of_belief"
+  },
+  {
+    "id": "pair-6-F__mock-model__quiz",
+    "scenario_id": "pair-6-F",
+    "pair_id": "pair-6",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-6-T__mock-model__interactive",
+    "scenario_id": "pair-6-T",
+    "pair_id": "pair-6",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-6-T__mock-model__quiz",
+    "scenario_id": "pair-6-T",
+    "pair_id": "pair-6",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-7-F__mock-model__interactive",
+    "scenario_id": "pair-7-F",
+    "pair_id": "pair-7",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-7-F__mock-model__quiz",
+    "scenario_id": "pair-7-F",
+    "pair_id": "pair-7",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-7-T__mock-model__interactive",
+    "scenario_id": "pair-7-T",
+    "pair_id": "pair-7",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-7-T__mock-model__quiz",
+    "scenario_id": "pair-7-T",
+    "pair_id": "pair-7",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-8-F__mock-model__interactive",
+    "scenario_id": "pair-8-F",
+    "pair_id": "pair-8",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-8-F__mock-model__quiz",
+    "scenario_id": "pair-8-F",
+    "pair_id": "pair-8",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-8-T__mock-model__interactive",
+    "scenario_id": "pair-8-T",
+    "pair_id": "pair-8",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": true,
+    "failure_tag": null
+  },
+  {
+    "id": "pair-8-T__mock-model__quiz",
+    "scenario_id": "pair-8-T",
+    "pair_id": "pair-8",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-9-F__mock-model__interactive",
+    "scenario_id": "pair-9-F",
+    "pair_id": "pair-9",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-9-F__mock-model__quiz",
+    "scenario_id": "pair-9-F",
+    "pair_id": "pair-9",
+    "condition": "F",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "picked_neither_location"
+  },
+  {
+    "id": "pair-9-T__mock-model__interactive",
+    "scenario_id": "pair-9-T",
+    "pair_id": "pair-9",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "interactive",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  },
+  {
+    "id": "pair-9-T__mock-model__quiz",
+    "scenario_id": "pair-9-T",
+    "pair_id": "pair-9",
+    "condition": "T",
+    "model_name": "mock-model",
+    "task_type": "quiz",
+    "is_correct": false,
+    "failure_tag": "wrong_belief_location"
+  }
+]

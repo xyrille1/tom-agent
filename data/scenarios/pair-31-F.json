@@ -1,0 +1,93 @@
+{
+  "id": "pair-31-F",
+  "pair_id": "pair-31",
+  "condition": "F",
+  "tier": 1,
+  "seed": 31,
+  "seeker_name": "Wren",
+  "target_object": "letter opener",
+  "rooms": [
+    {
+      "name": "hallway closet",
+      "containers": [
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "wicker basket"
+      ]
+    },
+    {
+      "name": "pantry",
+      "containers": [
+        "shoe rack"
+      ]
+    }
+  ],
+  "room_order": [
+    "garage",
+    "pantry",
+    "hallway closet"
+  ],
+  "initial_location": "hallway closet",
+  "seeker_away_room": "pantry",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Wren puts the letter opener in the plastic tote in the hallway closet.",
+      "actor": "Wren",
+      "object": "letter opener",
+      "from_loc": null,
+      "to_loc": "hallway closet",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Wren then heads to the pantry.",
+      "actor": "Wren",
+      "object": null,
+      "from_loc": "hallway closet",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "distractor_move",
+      "text": "At the same time, the packet of seeds is shifted from the shoe rack to the shoe rack in the pantry, unrelated to the letter opener's whereabouts.",
+      "actor": null,
+      "object": "packet of seeds",
+      "from_loc": "pantry",
+      "to_loc": "pantry",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "move",
+      "text": "Meanwhile, the letter opener is taken out of the plastic tote in the hallway closet and placed in the wicker basket in the garage.",
+      "actor": null,
+      "object": "letter opener",
+      "from_loc": "hallway closet",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 4,
+      "type": "filler",
+      "text": "Nobody tells Wren, who stays in the pantry the whole time.",
+      "actor": "Wren",
+      "object": null,
+      "from_loc": null,
+      "to_loc": "pantry",
+      "seeker_present": false
+    }
+  ],
+  "ground_truth_belief_location": "hallway closet",
+  "decoy_room": "pantry",
+  "has_distractor": true,
+  "created_at": "2026-07-13T17:49:11.545233+00:00"
+}

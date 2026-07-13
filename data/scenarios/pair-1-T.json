@@ -1,0 +1,85 @@
+{
+  "id": "pair-1-T",
+  "pair_id": "pair-1",
+  "condition": "T",
+  "tier": 1,
+  "seed": 1,
+  "seeker_name": "Rafael",
+  "target_object": "candle",
+  "rooms": [
+    {
+      "name": "sunroom",
+      "containers": [
+        "backpack"
+      ]
+    },
+    {
+      "name": "garage",
+      "containers": [
+        "backpack",
+        "plastic tote"
+      ]
+    },
+    {
+      "name": "attic",
+      "containers": [
+        "storage bin",
+        "top drawer"
+      ]
+    }
+  ],
+  "room_order": [
+    "attic",
+    "sunroom",
+    "garage"
+  ],
+  "initial_location": "attic",
+  "seeker_away_room": "sunroom",
+  "final_location": "garage",
+  "event_log": [
+    {
+      "index": 0,
+      "type": "place",
+      "text": "Rafael puts the candle in the top drawer in the attic.",
+      "actor": "Rafael",
+      "object": "candle",
+      "from_loc": null,
+      "to_loc": "attic",
+      "seeker_present": true
+    },
+    {
+      "index": 1,
+      "type": "seeker_leaves",
+      "text": "Rafael then heads to the sunroom.",
+      "actor": "Rafael",
+      "object": null,
+      "from_loc": "attic",
+      "to_loc": "sunroom",
+      "seeker_present": false
+    },
+    {
+      "index": 2,
+      "type": "move",
+      "text": "While Rafael is away, someone moves the candle from the top drawer in the attic to the backpack in the garage.",
+      "actor": null,
+      "object": "candle",
+      "from_loc": "attic",
+      "to_loc": "garage",
+      "seeker_present": false
+    },
+    {
+      "index": 3,
+      "type": "told",
+      "text": "Before returning, Rafael learns that the candle was moved to the backpack in the garage.",
+      "actor": "Rafael",
+      "object": "candle",
+      "from_loc": null,
+      "to_loc": "garage",
+      "seeker_present": true
+    }
+  ],
+  "ground_truth_belief_location": "garage",
+  "decoy_room": "sunroom",
+  "has_distractor": false,
+  "created_at": "2026-07-13T17:49:11.454276+00:00"
+}
