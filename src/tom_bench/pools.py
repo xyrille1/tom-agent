@@ -80,11 +80,14 @@ OBJECTS: list[str] = [
     "puzzle box",
     "harmonica",
     "magnifying glass",
-    "jar of buttons",
     "clipboard",
     "stopwatch",
     "rain jacket",
     "portable speaker",
+    "letter opener",
+    "ball of twine",
+    "spare batteries",
+    "packet of seeds",
 ]
 
 # NPC name pool: intentionally diverse, deliberately not "Sally"/"Anne".

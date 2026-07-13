@@ -1,0 +1,10 @@
+{
+  "_comment": "Small curated set of generic, original paraphrases of the classic false-belief ('Sally-Anne style') vignette shape, written for this project as a fixture for the novelty-check heuristic. Not verbatim quotes of any copyrighted psychological test material.",
+  "vignettes": [
+    "Sally puts her marble in a basket. Sally leaves the room. While Sally is away, Anne moves the marble from the basket to a box. Sally comes back into the room. Where will Sally look for her marble first?",
+    "A child places a toy inside a basket and then leaves the room to play outside. While the child is gone, another person takes the toy out of the basket and hides it in a nearby box. When the child returns, where will they look for the toy first?",
+    "Anne watches Sally put a marble into a basket. Sally then goes outside. While Sally is gone, Anne quietly moves the marble into a box instead. Sally returns and wants her marble back. Where does Sally think the marble is?",
+    "A boy hides a ball in a drawer before leaving the room to wash his hands. While he is out of the room, his sister moves the ball into a different drawer. When the boy comes back, which drawer will he check first?",
+    "A girl puts her doll in a basket and steps outside to play. Someone else moves the doll from the basket to a toy chest while she is outside. When she returns, she will look for the doll in the basket, not the toy chest, because she did not see it being moved."
+  ]
+}
